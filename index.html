@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#0C3DF8">
+
+	<title>Test Structure</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville&display=swap"
+		rel="stylesheet">
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+
+
+
+	<style>
+		/* body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		canvas {
+			margin: auto;
+		} */
+		/* 
+		* {
+			scroll-behavior: smooth;
+			transition: all ease-in-out 0.5s;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden;
+
+		}
+
+		#main {
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-columns: 1fr;
+			width: 100vw;
+			height: 100%;
+			background: linear-gradient(#5619ff 0%, rgb(132, 49, 255) 60%);
+
+			overflow: auto;
+			outline: 1px dashed lightgray;
+
+			scroll-snap-type: y mandatory;
+
+		}
+
+		.section {
+			width: 100vw;
+			height: 100vh;
+			background-color: transparent;
+			display: grid;
+
+			border: 1px solid black;
+			place-items: center;
+			scroll-snap-align: center;
+
+
+		} */
+	</style>
+</head>
+
+<body>
+	<div id="bkgCanvasContainer"></div>
+	<main id="main" class="container y mandatory-scroll-snapping" dir="ltr">
+		<section class="section">
+			<div id="containerOne">
+				<h1 id="titleTest">Welcome !</h1>
+				<div>
+					<h2 id="subtitleTest">I'm Alex Valente.</h2>
+				</div>
+
+			</div>
+		</section>
+		<section class="section">
+			<div id="containerTwo" class="glowclass">
+				<div id="photoSection" class="appearTitle">
+					<h2 id="titlePageTwo">That's Me</h2>
+					<div id="imgContainer"><a href="https://ibb.co/yfD7NKd"><img
+								src="https://i.ibb.co/6n2LyGr/test-Image-Three.png" alt="This is me" loading="lazy"></a></div>
+				</div>
+
+				<div id="textSection">
+					<div id="textBoxTwo" class="appearTitle">
+						<ul class="appearTitle">
+							<li>Età: <span class="myDatas"> 31</span></li>
+							<li>Città: <span class="myDatas"> Schio</span></li>
+							<li>Paese: <span class="myDatas"> Italia</span></li>
+						</ul>
+					</div>
+					<div id="textBoxOne" class="appearTitle">
+						<p>Sono uno sviluppatore JavaScript e studente Front-End nella piattaforma start2impact.</p>
+					</div>
+					<div id="textBoxThree" class="appearTitle">
+						<p>Il mio obiettivo è contribuire, con
+							la creazione di siti web, app e software, alla trasformazione
+							digitale in atto, modificando paradigmi e migliorando il mondo con le
+							mie capacità e la mia formazione quotidiana.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section"></section>
+		<section class="section"></section>
+		<section class="section"></section>
+	</main>
+
+	<script src="sketch.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
