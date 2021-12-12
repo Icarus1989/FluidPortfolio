@@ -227,7 +227,14 @@ mainElt.addEventListener('scroll', () => {
 
 // Background Animation
 
-// window.addEventListener('resize', () => {
-//   widthM = document.documentElement.clientWidth;
-//   heightM = document.documentElement.clientHeight;
-// });
+
+let textFields = document.querySelectorAll('.textField');
+console.log(textFields);
+
+for (let i = 0; i < textFields.length; i++) {
+  let canvasTextFields = function (cnv) {
+    cnv.setup = function () {}
+    cnv.draw = function () {}
+  }
+  // new p5(canvasTextFields, textFields[i]);
+}

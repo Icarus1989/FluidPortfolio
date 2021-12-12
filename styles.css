@@ -256,9 +256,9 @@ body {
 }
 
 #imgContainer>a>img {
-  max-width: 20vh;
-  width: auto;
-  height: 100%;
+  max-width: 40vh;
+  width: 100%;
+  height: auto;
   z-index: 2;
   border-radius: 100%;
   /* filter: drop-shadow(0vh 1vh 1vh black) contrast(90%) drop-shadow(1vh -1vh 1vh rgba(12, 61, 248, 0.7)); */
