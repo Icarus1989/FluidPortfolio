@@ -117,7 +117,7 @@ body {
   grid-template-columns: minmax(35%, 1fr) 1fr;
   width: 90vw;
   height: 90%;
-  font-family: 'Libre Baskerville', serif;
+  /* font-family: 'Libre Baskerville', serif; */
   /* font-size: 12px; per mobile*/
   /* font-size: 1rem; */
   font-weight: 400;
@@ -139,7 +139,7 @@ body {
 } */
 
 #titleTwoContainer {
-  height: 100%;
+  height: fit-content;
 
   /* padding-top: 20%;
   padding-bottom: auto; */
@@ -173,6 +173,8 @@ body {
   text-align: center;
 
   text-justify: auto;
+  padding-top: 30%;
+  padding-bottom: 30%;
   /* 
   padding-top: 20%;
   padding-bottom: auto;
@@ -267,13 +269,27 @@ body {
 
 }
 
+/* border: 1px solid #303b42; */
+/* box-shadow: -1vh -1vh black, 1vh 1vh black; */
+/* border-radius: 0vh; */
+
+
+
 .textField {
+  height: fit-content;
+  font-size: 1.7vh;
+  background: transparent;
+  text-align: start;
+  position: relative;
+
+}
+
+/* {
   height: fit-content;
   font-size: 1.5vh;
 
   filter: drop-shadow(0vh 0vh 0.5vh black);
   z-index: 20;
-  /* border: 1px solid #303b42; */
 
   background: rgba(12, 59, 248, 0.493);
   padding-left: 0.5rem;
@@ -297,17 +313,30 @@ body {
   margin-right: 0.2rem;
 
 
-  /* box-shadow: -1vh -1vh black, 1vh 1vh black; */
 
   text-align: start;
   line-height: 1rem;
 
-  /* border-radius: 0vh; */
 
+} */
+
+.textCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .textField>p {
+  color: black;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   margin-top: 1vh;
+  margin-bottom: 1vh;
+  z-index: 21;
+
 }
 
 #textSection {
@@ -319,7 +348,7 @@ body {
 }
 
 #textBoxOne {
-  height: 25%;
+  height: fit-content;
   /* padding-left: 0.5rem;
   padding-right: 0.5rem; */
   /* border-left: 2px solid #303b42; */
@@ -351,7 +380,8 @@ body {
 }
 
 #textBoxTwo {
-  height: 25%;
+  height: fit-content;
+  /* height: 25%; */
   /* padding-left: 0.5rem;
   padding-right: 0.5rem; */
   flex: 1 1 auto;
@@ -398,12 +428,16 @@ body {
 }
 
 #textBoxThree {
-  height: 40%;
+  height: fit-content;
+  /* height: 40%; */
   /* padding-left: 0.5rem;
   padding-right: 0.5rem; */
   flex: 1 1 auto;
   display: grid;
   place-items: center;
+
+  padding-top: 10%;
+  padding-bottom: 10%;
 
   /* border-bottom: 1.5vw solid rgb(12, 61, 248);
   border-right: 0vw solid transparent;

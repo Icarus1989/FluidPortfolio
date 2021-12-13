@@ -227,14 +227,73 @@ mainElt.addEventListener('scroll', () => {
 
 // Background Animation
 
+// Class
+
+class Particle {
+  constructor(p = p5.instance, xLoc, pxPerFrame, limit) {
+    this.p = p;
+    this.xLoc = xLoc;
+    this.pxPerFrame = pxPerFrame;
+    this.pos = p.createVector(this.xLoc, 0);
+    this.vel = p.createVector(0, pxPerFrame);
+    this.r = w / 4;
+    this.limit = this.r / limit;
+  }
+  show() {
+
+    this.p.fill(23, 11, 217);
+    this.p.noStroke();
+    this.p.circle(this.pos.x, this.pos.y, this.r);
+
+    return this;
+  }
+  update() {
+    this.pos.add(this.vel);
+  }
+  edges() {
+    if (this.pos.y > h - (this.limit)) {
+      this.vel.y = 0;
+    }
+  }
+}
+
+// Class
+
 
 let textFields = document.querySelectorAll('.textField');
-console.log(textFields);
 
-for (let i = 0; i < textFields.length; i++) {
-  let canvasTextFields = function (cnv) {
-    cnv.setup = function () {}
-    cnv.draw = function () {}
+let canvasContainer = document.createElement('div');
+textFields[0].append(canvasContainer);
+canvasContainer.classList.add('textCanvas');
+let w = textFields[0].clientWidth;
+let h = textFields[0].clientHeight;
+// let particleOne;
+
+
+
+let canvasTextFieldOne = function (cnv) {
+
+  let particleOne;
+  let particleTwo;
+
+  cnv.setup = function () {
+    cnv.createCanvas(w, h);
+    cnv.background(220);
+    particleOne = new Particle(cnv, w / 2, 0.2, 2);
+    particleTwo = new Particle(cnv, w / 4, 0.3, 1.5);
+    // particleOne = ;particleOne = new Particle(p);
+    // particleOne.x = w / 2;
+    // particleOne.y = 0;
+    // cnv.bind(particleOne);
+
   }
-  // new p5(canvasTextFields, textFields[i]);
+  cnv.draw = function () {
+    particleOne.show();
+    particleOne.update();
+    particleOne.edges();
+    particleTwo.show();
+    particleTwo.update();
+    particleTwo.edges();
+  }
 }
+new p5(canvasTextFieldOne, canvasContainer);
