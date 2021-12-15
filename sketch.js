@@ -298,6 +298,13 @@ let canvasTextFieldOne = function (cnv) {
   let particleTwo;
   let particleThree;
 
+  // cnv.windowResized = function () { // per ridimensionamento canvas in caso di resize
+  //   // let wOne = textFields[0].clientWidth;
+  //   // let hOne = textFields[0].clientHeight;
+  //   cnv.resizeCanvas(wOne, hOne);
+  //   // console.log('resized');
+  // }
+
   cnv.setup = function () {
     cnv.createCanvas(wOne, hOne);
     cnv.background(220, 0);
