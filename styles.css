@@ -54,7 +54,8 @@ body {
   display: grid;
   place-items: center;
 
-  border: 2px solid blue;
+
+  border-bottom: 4px solid blue;
 }
 
 
@@ -124,9 +125,10 @@ body {
   font-family: 'Libre Baskerville', serif;
   color: rgb(220, 220, 220);
   /* filter: drop-shadow(3px 3px 1px black); */
-  border: 2px solid greenyellow;
-
-  /* scroll-snap-align: center; */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2))
+    /* scroll-snap-align: center; */
 
 }
 
@@ -167,6 +169,7 @@ body {
   /* position: relative;
   top: 1%; */
   /* height: 100%; */
+  color: white;
   font-family: 'Dancing Script', cursive;
   font-size: 4vh;
 
@@ -204,7 +207,7 @@ body {
   display: grid;
   place-items: center;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   /* border-top: 0.5vh solid transparent;
   border-left: 1.0vh solid rgb(12, 61, 248);
@@ -228,7 +231,7 @@ body {
 
   /* background: linear-gradient(rgba(12, 61, 248, 0.7), rgba(86, 25, 255, 0.5)); */
   /* background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(12, 61, 248, 0.7)); */
-  filter: drop-shadow(0vh 0vh 0.5vh black);
+  /* filter: drop-shadow(0vh 0vh 0.5vh black); */
   /* box-shadow: rgba(12, 61, 248, 0.56) 0px 22px 70px 4px; */
 
 }
@@ -240,19 +243,23 @@ body {
   place-items: center;
   width: fit-content;
   height: auto;
-  border-radius: 100%;
+  border: 1vh solid rgb(40, 53, 147);
+  border-radius: 10%;
   /* background-color: rgba(62, 49, 255, 0.753); */
   /* backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px); */
-  background: linear-gradient(rgba(12, 61, 248, 0.7), rgba(86, 25, 255, 0.3));
+  background: linear-gradient(rgba(12, 61, 248, 0.7) 90%, rgba(23, 11, 217, 1.0));
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 #imgContainer>a {
+  width: 100%;
+  height: auto;
+
   box-shadow: inset 0vh 2vh 3vh rgba(12, 61, 248, 1.0);
-  border-radius: 100%;
+  border-radius: 10%;
 
 
 }
@@ -262,9 +269,10 @@ body {
   width: 100%;
   height: auto;
   z-index: 2;
-  border-radius: 100%;
+  border-radius: 10%;
   /* filter: drop-shadow(0vh 1vh 1vh black) contrast(90%) drop-shadow(1vh -1vh 1vh rgba(12, 61, 248, 0.7)); */
   margin-top: 10%;
+  margin-bottom: 0%;
   opacity: 1.0;
 
 }
@@ -281,6 +289,7 @@ body {
   background: transparent;
   text-align: start;
   position: relative;
+  /* filter: drop-shadow(0vh -0.1vh 0px rgb(12, 61, 248)); */
 
 }
 
@@ -326,6 +335,7 @@ body {
   left: 0;
   z-index: 0;
 
+  /* box-shadow: 0 0.5vh rgb(12, 61, 248); */
   filter: drop-shadow(0vh 0.5vh 0px rgb(12, 61, 248));
 }
 

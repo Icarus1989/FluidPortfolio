@@ -305,9 +305,16 @@ let canvasTextFieldOne = function (cnv) {
     particleTwo = new Particle(cnv, wOne, hOne, wOne / 4, 0.6, 1.5);
     particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.4, 1.7);
 
-    cnv.stroke(132, 49, 255);
-    cnv.strokeWeight(8);
-    cnv.rect(wOne / 24, 0, wOne - (2 * wOne / 24), hOne - (particleOne.limit / 2), particleOne.r / 2);
+
+    // cnv.fill(12, 61, 248);
+    // cnv.noStroke();
+    // cnv.rect(wOne / 24, 0, wOne - (2 * wOne / 24), hOne - (particleOne.limit / 2), particleOne.r / 2);
+
+
+    cnv.fill(255);
+    cnv.stroke(40, 53, 147);
+    cnv.strokeWeight(particleOne.r / 8);
+    cnv.rect(wOne / 24, 0, wOne - (2 * wOne / 24), hOne - (particleOne.limit / 2), particleOne.r / 4);
 
     // particleOne = ;particleOne = new Particle(p);
     // particleOne.x = w / 2;
@@ -317,9 +324,13 @@ let canvasTextFieldOne = function (cnv) {
   }
   cnv.draw = function () {
 
+
+
     particleOne.show();
     particleTwo.show();
     particleThree.show();
+
+
 
     if (window.pageYOffset > sections[1].getBoundingClientRect().y) {
       // console.log('Active');
@@ -329,7 +340,10 @@ let canvasTextFieldOne = function (cnv) {
       particleTwo.edges();
       particleThree.update();
       particleThree.edges();
+
+
     }
+
 
 
   }
@@ -356,9 +370,9 @@ let canvasTextFieldTwo = function (cnv) {
     // cnv.stroke(12, 61, 248, 250);
     // cnv.stroke(0, 0, 0);
     // cnv.strokeWeight(4);
-    cnv.stroke(132, 49, 255);
+    cnv.stroke(40, 53, 147);
     cnv.strokeWeight(8);
-    cnv.rect(wTwo / 24, 0, wTwo - (2 * wTwo / 24), hTwo - (particleOne.limit / 2), particleOne.r / 2);
+    cnv.rect(wTwo / 24, 0, wTwo - (2 * wTwo / 24), hTwo - (particleOne.limit / 2), particleOne.r / 4);
 
     // particleOne = ;particleOne = new Particle(p);
     // particleOne.x = w / 2;
@@ -401,9 +415,9 @@ let canvasTextFieldThree = function (cnv) {
     particleTwo = new Particle(cnv, wThree, hThree, wThree / 4, 0.6, 1.5);
     particleThree = new Particle(cnv, wThree, hThree, wThree * (3 / 4), 0.4, 1.7);
 
-    cnv.stroke(132, 49, 255);
+    cnv.stroke(40, 53, 147);
     cnv.strokeWeight(8);
-    cnv.rect(wThree / 24, 0, wThree - (2 * wThree / 24), hThree - (particleOne.limit / 2), particleOne.r / 2);
+    cnv.rect(wThree / 24, 0, wThree - (2 * wThree / 24), hThree - (particleOne.limit / 2), particleOne.r / 4);
 
     // particleOne = ;particleOne = new Particle(p);
     // particleOne.x = w / 2;
