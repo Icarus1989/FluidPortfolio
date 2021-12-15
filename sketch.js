@@ -230,13 +230,15 @@ mainElt.addEventListener('scroll', () => {
 // Class
 
 class Particle {
-  constructor(p = p5.instance, xLoc, pxPerFrame, limit) {
+  constructor(p = p5.instance, w, h, xLoc, pxPerFrame, limit) {
     this.p = p;
+    this.w = w;
+    this.h = h;
     this.xLoc = xLoc;
     this.pxPerFrame = pxPerFrame;
     this.pos = p.createVector(this.xLoc, 0);
     this.vel = p.createVector(0, pxPerFrame);
-    this.r = w / 4;
+    this.r = w / 3.3;
     this.limit = this.r / limit;
   }
   show() {
@@ -251,7 +253,7 @@ class Particle {
     this.pos.add(this.vel);
   }
   edges() {
-    if (this.pos.y > h - (this.limit)) {
+    if (this.pos.y > this.h - (this.limit)) {
       this.vel.y = 0;
     }
   }
@@ -262,11 +264,30 @@ class Particle {
 
 let textFields = document.querySelectorAll('.textField');
 
+// canvas zone creation
+
 let canvasContainer = document.createElement('div');
 textFields[0].append(canvasContainer);
 canvasContainer.classList.add('textCanvas');
-let w = textFields[0].clientWidth;
-let h = textFields[0].clientHeight;
+
+let canvasContainerTwo = document.createElement('div');
+textFields[1].append(canvasContainerTwo);
+canvasContainerTwo.classList.add('textCanvas');
+
+let canvasContainerThree = document.createElement('div');
+textFields[2].append(canvasContainerThree);
+canvasContainerThree.classList.add('textCanvas');
+
+// canvas zone creation
+
+let wOne = textFields[0].clientWidth;
+let hOne = textFields[0].clientHeight;
+
+let wTwo = textFields[1].clientWidth;
+let hTwo = textFields[1].clientHeight;
+
+let wThree = textFields[2].clientWidth;
+let hThree = textFields[2].clientHeight;
 // let particleOne;
 
 
@@ -275,12 +296,19 @@ let canvasTextFieldOne = function (cnv) {
 
   let particleOne;
   let particleTwo;
+  let particleThree;
 
   cnv.setup = function () {
-    cnv.createCanvas(w, h);
-    cnv.background(220);
-    particleOne = new Particle(cnv, w / 2, 0.2, 2);
-    particleTwo = new Particle(cnv, w / 4, 0.3, 1.5);
+    cnv.createCanvas(wOne, hOne);
+    cnv.background(220, 0);
+    particleOne = new Particle(cnv, wOne, hOne, wOne / 2, 0.4, 2);
+    particleTwo = new Particle(cnv, wOne, hOne, wOne / 4, 0.6, 1.5);
+    particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.4, 1.7);
+
+    cnv.stroke(132, 49, 255);
+    cnv.strokeWeight(8);
+    cnv.rect(wOne / 24, 0, wOne - (2 * wOne / 24), hOne - (particleOne.limit / 2), particleOne.r / 2);
+
     // particleOne = ;particleOne = new Particle(p);
     // particleOne.x = w / 2;
     // particleOne.y = 0;
@@ -288,12 +316,118 @@ let canvasTextFieldOne = function (cnv) {
 
   }
   cnv.draw = function () {
+
     particleOne.show();
-    particleOne.update();
-    particleOne.edges();
     particleTwo.show();
-    particleTwo.update();
-    particleTwo.edges();
+    particleThree.show();
+
+    if (window.pageYOffset > sections[1].getBoundingClientRect().y) {
+      // console.log('Active');
+      particleOne.update();
+      particleOne.edges();
+      particleTwo.update();
+      particleTwo.edges();
+      particleThree.update();
+      particleThree.edges();
+    }
+
+
   }
 }
 new p5(canvasTextFieldOne, canvasContainer);
+
+
+let canvasTextFieldTwo = function (cnv) {
+
+  let particleOne;
+  let particleTwo;
+  let particleThree;
+
+  cnv.setup = function () {
+    cnv.createCanvas(wTwo, hTwo);
+    cnv.background(220, 0);
+    // cnv.rect()
+    particleOne = new Particle(cnv, wTwo, hTwo, wTwo / 2, 0.6, 2);
+    particleTwo = new Particle(cnv, wTwo, hTwo, wTwo / 4, 0.4, 1.5);
+    particleThree = new Particle(cnv, wTwo, hTwo, wTwo * (3 / 4), 0.4, 1.7);
+
+    console.log(particleOne);
+
+    // cnv.stroke(12, 61, 248, 250);
+    // cnv.stroke(0, 0, 0);
+    // cnv.strokeWeight(4);
+    cnv.stroke(132, 49, 255);
+    cnv.strokeWeight(8);
+    cnv.rect(wTwo / 24, 0, wTwo - (2 * wTwo / 24), hTwo - (particleOne.limit / 2), particleOne.r / 2);
+
+    // particleOne = ;particleOne = new Particle(p);
+    // particleOne.x = w / 2;
+    // particleOne.y = 0;
+    // cnv.bind(particleOne);
+
+  }
+  cnv.draw = function () {
+
+    particleOne.show();
+    particleTwo.show();
+    particleThree.show();
+
+    if (window.pageYOffset > sections[1].getBoundingClientRect().y) {
+      // console.log('Active');
+      particleOne.update();
+      particleOne.edges();
+      particleTwo.update();
+      particleTwo.edges();
+      particleThree.update();
+      particleThree.edges();
+    }
+
+
+  }
+}
+new p5(canvasTextFieldTwo, canvasContainerTwo);
+
+
+let canvasTextFieldThree = function (cnv) {
+
+  let particleOne;
+  let particleTwo;
+  let particleThree;
+
+  cnv.setup = function () {
+    cnv.createCanvas(wThree, hThree);
+    cnv.background(220, 0);
+    particleOne = new Particle(cnv, wThree, hThree, wThree / 2, 0.4, 2);
+    particleTwo = new Particle(cnv, wThree, hThree, wThree / 4, 0.6, 1.5);
+    particleThree = new Particle(cnv, wThree, hThree, wThree * (3 / 4), 0.4, 1.7);
+
+    cnv.stroke(132, 49, 255);
+    cnv.strokeWeight(8);
+    cnv.rect(wThree / 24, 0, wThree - (2 * wThree / 24), hThree - (particleOne.limit / 2), particleOne.r / 2);
+
+    // particleOne = ;particleOne = new Particle(p);
+    // particleOne.x = w / 2;
+    // particleOne.y = 0;
+    // cnv.bind(particleOne);
+
+  }
+  cnv.draw = function () {
+
+    particleOne.show();
+    particleTwo.show();
+    particleThree.show();
+
+    if (window.pageYOffset > sections[1].getBoundingClientRect().y) {
+      // console.log('Active');
+      particleOne.update();
+      particleOne.edges();
+      particleTwo.update();
+      particleTwo.edges();
+      particleThree.update();
+      particleThree.edges();
+    }
+
+
+  }
+}
+new p5(canvasTextFieldThree, canvasContainerThree);

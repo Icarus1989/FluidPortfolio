@@ -122,7 +122,7 @@ body {
   /* font-size: 1rem; */
   font-weight: 400;
   font-family: 'Libre Baskerville', serif;
-  color: white;
+  color: rgb(220, 220, 220);
   /* filter: drop-shadow(3px 3px 1px black); */
   border: 2px solid greenyellow;
 
@@ -147,8 +147,8 @@ body {
   padding-right: 10%;
 
 
-  background: rgba(12, 59, 248, 0.493);
-  border-top: 0vh solid transparent;
+  /* background: rgba(12, 59, 248, 0.493); */
+  /* border-top: 0vh solid transparent;
   border-left: 0.8vh solid rgb(12, 61, 248);
   border-bottom: 1.5vh solid rgb(12, 61, 248);
   border-right: 0.8vh solid rgb(12, 61, 248);
@@ -157,7 +157,7 @@ body {
   border-bottom-right-radius: 14vh 16vh;
 
   border-top-left-radius: 2vh 16vh;
-  border-top-right-radius: 2vh 16vh;
+  border-top-right-radius: 2vh 16vh; */
 
   margin-top: 20%;
 }
@@ -276,7 +276,7 @@ body {
 
 
 .textField {
-  height: fit-content;
+  /* height: fit-content; */
   font-size: 1.7vh;
   background: transparent;
   text-align: start;
@@ -325,10 +325,12 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
+
+  filter: drop-shadow(0vh 0.5vh 0px rgb(12, 61, 248));
 }
 
 .textField>p {
-  color: black;
+  color: white;
   padding-left: 1vh;
   padding-right: 1vh;
   padding-top: 1vh;
@@ -348,19 +350,21 @@ body {
 }
 
 #textBoxOne {
-  height: fit-content;
-  /* padding-left: 0.5rem;
-  padding-right: 0.5rem; */
+  height: 20%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   /* border-left: 2px solid #303b42; */
   flex: 1 1 auto;
   display: grid;
   place-items: center;
+
+  color: white;
   /* text-shadow: 0 0 1em rgb(12, 61, 248); */
   /* border-bottom: 1.5vw solid rgb(12, 61, 248);
   border-right: 0vw solid transparent;
   border-left: 0vw solid transparent;
   border-top: 1.5vw solid rgb(132, 49, 255); */
-  filter: drop-shadow(0vh 0vh 0.5vh black);
+  /* filter: drop-shadow(0vh 0vh 0.5vh black); */
   /* border-radius: 1.5rem; */
   /* background: linear-gradient(rgba(12, 61, 248, 0.7), rgba(86, 25, 255, 0.5)); */
   /* background: linear-gradient(rgba(12, 61, 248, 0.6), rgba(86, 25, 255, 0.3)); */
@@ -380,13 +384,15 @@ body {
 }
 
 #textBoxTwo {
-  height: fit-content;
+  height: 20%;
   /* height: 25%; */
   /* padding-left: 0.5rem;
   padding-right: 0.5rem; */
   flex: 1 1 auto;
   display: grid;
   place-items: center;
+  color: white;
+
   /* per mobile */
   /* place-items: end center; */
   /* border-bottom: 1.5vw solid rgb(12, 61, 248);
@@ -428,10 +434,15 @@ body {
 }
 
 #textBoxThree {
-  height: fit-content;
+  height: 40%;
+  /* <----- Cmabiare in % */
   /* height: 40%; */
   /* padding-left: 0.5rem;
   padding-right: 0.5rem; */
+  /* text-justify: distribute; */
+  /* text-justify: inter-word; */
+  padding-left: 1rem;
+  padding-right: 1rem;
   flex: 1 1 auto;
   display: grid;
   place-items: center;
