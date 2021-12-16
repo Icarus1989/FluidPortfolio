@@ -323,7 +323,7 @@ body {
   z-index: 0;
 
   /* box-shadow: 0 0.5vh rgb(12, 61, 248); */
-  filter: drop-shadow(0vh 0.6vh 0px rgb(12, 61, 248)) drop-shadow(0vh 0vh 0px rgb(12, 61, 248));
+  filter: drop-shadow(0vh 0.6vh 0px rgb(12, 61, 248));
 }
 
 .textField>p {
@@ -627,8 +627,11 @@ padding-left: 0.5rem;
   text-decoration: underline;
 }
 
-#linksContainer {
-  line-height: 2vh;
+.linksContainer {
+  position: relative;
+  top: -10%;
+  height: 100%;
+  /* border: 2px solid red; */
 }
 
 #titleContTest {
