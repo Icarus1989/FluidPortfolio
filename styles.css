@@ -396,7 +396,9 @@ padding-left: 0.5rem;
   padding-right: 0.5rem; */
   flex: 1 1 auto;
   display: grid;
-  place-items: center;
+  place-items: center start;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: white;
 
   /* per mobile */
@@ -430,7 +432,7 @@ padding-left: 0.5rem;
   margin-bottom: 0.1rem;
   margin-left: 0;
   padding-right: 0rem;
-  padding-left: 0.1rem;
+  padding-left: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   line-height: 1.4rem;
@@ -485,6 +487,53 @@ padding-left: 0.5rem;
   padding-right: 0.1em;
 }
 
+#containerThree {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 95vh;
+  border: 1px solid red;
+
+  /* grid-template-areas: "a b c"10vh "d e f"; */
+}
+
+#titlePageThree {
+  color: white;
+  width: 200px;
+  border: 1px solid tomato;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vh;
+  filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
+
+}
+
+#skills {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "a b c"
+    "d e f";
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr; */
+}
+
+.skillContainer {
+  width: 100%;
+  height: 30vh;
+  background: transparent;
+  border: 1px solid red;
+  display: grid;
+  place-items: center;
+}
+
+.skillDetail {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 100%;
+  background: turquoise;
+}
+
 
 
 #containerFour {
@@ -531,6 +580,7 @@ padding-left: 0.5rem;
   scroll-snap-align: center;
 
 
+  /* border: 1px solid red; */
 
 
 
@@ -631,6 +681,9 @@ padding-left: 0.5rem;
   position: relative;
   top: -10%;
   height: 100%;
+  line-height: 1rem;
+  /* display: grid;
+  grid-template-rows: 0.5fr 0.5fr; */
   /* border: 2px solid red; */
 }
 
@@ -649,7 +702,7 @@ padding-left: 0.5rem;
   text-align: center;
   font-size: 6vh;
   margin-top: 0;
-  margin-bottom: 10%;
+  margin-bottom: 0%;
   filter: drop-shadow(3px 3px 1px black);
   z-index: 10;
 }
