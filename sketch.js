@@ -2,9 +2,9 @@ let bkgCanvasContainer = document.querySelector('#bkgCanvasContainer');
 let mainElt = document.querySelector('#main');
 
 let sections = document.querySelectorAll('section');
-console.log(sections);
+// console.log(sections);
 
-console.log(sections[0].offsetTop);
+// console.log(sections[0].offsetTop);
 
 
 // Background Animation
@@ -202,10 +202,7 @@ let mainCanvas = function (cnv) {
 
 new p5(mainCanvas, bkgCanvasContainer);
 
-
-
-
-console.log('VariationX: ' + variationX);
+// console.log('VariationX: ' + variationX);
 
 mainElt.addEventListener('scroll', () => {
   offset = -(sections[0].getBoundingClientRect().y) / 10;

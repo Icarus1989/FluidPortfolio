@@ -493,7 +493,7 @@ padding-left: 0.5rem;
   grid-template-rows: 0.1fr 1.0fr;
   width: 100%;
   height: 95vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   /* grid-template-areas: "a b c"10vh "d e f"; */
 }
@@ -501,7 +501,7 @@ padding-left: 0.5rem;
 #titlePageThree {
   color: white;
   width: 200px;
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   font-family: 'Dancing Script', cursive;
   font-size: 5.5vh;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
@@ -525,17 +525,60 @@ padding-left: 0.5rem;
   background: transparent;
   border: 1px solid red;
   display: grid;
-  place-items: center;
+  place-items: start center;
+
 }
 
 .skillDetail {
+  display: grid;
+  place-items: start center;
   width: 15vh;
   height: 15vh;
+  border: 0vh solid rgb(12, 61, 248);
   border-radius: 100%;
-  background: turquoise;
+  /* background: conic-gradient(from 270deg, transparent, 180deg, white 180deg 181deg, rgb(12, 61, 248) 181deg 360deg); */
+  /* background-position: 50% 80%; */
+  /* background: rgb(12, 61, 248); */
+  background: linear-gradient(#5619ff 0%, rgb(132, 49, 255) 60%);
+  /* filter: drop-shadow(1vh 1vh 0vh rgba(23, 11, 217, 1.0)); */
+  /* background-position: 80% 50%; */
+  transition: all 1.5s ease-in-out;
+  transform: translate(0, -50%) scale(0.0);
+
 }
 
+.skillDetail>svg {
+  /* width: 100%; */
+  /* color: #E34C26; */
+  filter: drop-shadow(6px 6px 6px black);
+  margin-top: 5%;
+  /* border: 1vh solid black; */
+}
 
+.fa-html5 {
+  height: 50%;
+  color: #E34C26;
+}
+
+.fa-css3-alt {
+  height: 50%;
+  color: #264DE4;
+}
+
+.fa-js-square {
+  height: 45%;
+  color: #F0DB4F;
+}
+
+.fa-node-js {
+  height: 45%;
+  color: #3C837A;
+}
+
+.skillDetail>a>img {
+  width: 50%;
+  margin-top: 10%;
+}
 
 #containerFour {
   display: grid;
