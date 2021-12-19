@@ -535,11 +535,13 @@ padding-left: 0.5rem;
   width: 15vh;
   height: 15vh;
   border: 0vh solid rgb(12, 61, 248);
+  /* attenzione border, ridimensionamento inaspettato */
   border-radius: 100%;
   /* background: conic-gradient(from 270deg, transparent, 180deg, white 180deg 181deg, rgb(12, 61, 248) 181deg 360deg); */
   /* background-position: 50% 80%; */
   /* background: rgb(12, 61, 248); */
-  background: linear-gradient(#5619ff 0%, rgb(132, 49, 255) 60%);
+  /* background: linear-gradient(#5619ff 0%, rgb(132, 49, 255) 60%); */
+  background: radial-gradient(rgb(50, 50, 50) 50%, rgb(12, 61, 248) 50% 65%, transparent 65%), conic-gradient(white 120deg, white 120deg 240deg, red 240deg);
   /* filter: drop-shadow(1vh 1vh 0vh rgba(23, 11, 217, 1.0)); */
   /* background-position: 80% 50%; */
   transition: all 1.5s ease-in-out;
@@ -578,6 +580,8 @@ padding-left: 0.5rem;
 .skillDetail>a>img {
   width: 50%;
   margin-top: 10%;
+  filter: drop-shadow(6px 6px 6px black);
+
 }
 
 #containerFour {
