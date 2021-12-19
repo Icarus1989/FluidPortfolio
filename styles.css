@@ -532,16 +532,21 @@ padding-left: 0.5rem;
 .skillDetail {
   display: grid;
   place-items: start center;
-  width: 15vh;
-  height: 15vh;
-  border: 0vh solid rgb(12, 61, 248);
+  width: 14vh;
+  height: 14vh;
+  border: 8px solid rgb(12, 61, 248);
   /* attenzione border, ridimensionamento inaspettato */
   border-radius: 100%;
   /* background: conic-gradient(from 270deg, transparent, 180deg, white 180deg 181deg, rgb(12, 61, 248) 181deg 360deg); */
   /* background-position: 50% 80%; */
   /* background: rgb(12, 61, 248); */
   /* background: linear-gradient(#5619ff 0%, rgb(132, 49, 255) 60%); */
-  background: radial-gradient(rgb(50, 50, 50) 50%, rgb(12, 61, 248) 50% 65%, transparent 65%), conic-gradient(white 120deg, white 120deg 240deg, red 240deg);
+
+  /* circular skill bar */
+  /* background: radial-gradient(rgb(50, 50, 50) 55%, rgb(12, 61, 248) 45% 55%, transparent 55% 80%, rgb(12, 61, 248) 80%), conic-gradient(#E34C26 240deg, rgb(132, 49, 255) 240deg); */
+  /* circular skill bar */
+
+  background: linear-gradient(to top, rgb(23, 11, 217) 50% 51%, rgb(50, 50, 50) 51%);
   /* filter: drop-shadow(1vh 1vh 0vh rgba(23, 11, 217, 1.0)); */
   /* background-position: 80% 50%; */
   transition: all 1.5s ease-in-out;
@@ -552,35 +557,35 @@ padding-left: 0.5rem;
 .skillDetail>svg {
   /* width: 100%; */
   /* color: #E34C26; */
-  filter: drop-shadow(6px 6px 6px black);
+  /* filter: drop-shadow(6px 6px 6px black); */
   margin-top: 5%;
   /* border: 1vh solid black; */
 }
 
 .fa-html5 {
-  height: 50%;
+  height: 45%;
   color: #E34C26;
 }
 
 .fa-css3-alt {
-  height: 50%;
+  height: 45%;
   color: #264DE4;
 }
 
 .fa-js-square {
-  height: 45%;
+  height: 40%;
   color: #F0DB4F;
 }
 
 .fa-node-js {
-  height: 45%;
+  height: 40%;
   color: #3C837A;
 }
 
 .skillDetail>a>img {
-  width: 50%;
-  margin-top: 10%;
-  filter: drop-shadow(6px 6px 6px black);
+  width: 45%;
+  margin-top: 5%;
+  /* filter: drop-shadow(6px 6px 6px black); */
 
 }
 

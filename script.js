@@ -17,7 +17,7 @@ mainElement.addEventListener('scroll', () => {
           // circle.style.background = `conic-gradient(from 270deg at 50% 100%, transparent, 180deg, white 180deg 181deg, rgb(12, 61, 248) 181deg 360deg)`
           circle.style.borderRadius = `100%`;
           circle.style.transform = `translate(0px, ${middle}px) scale(1.0)`;
-          circle.style.border = `1vh solid rgb(12, 61, 248)`;
+          // circle.style.border = `1vh solid white`;
           resolve();
           // circle.style.transform = `scale(1)`;
         }
