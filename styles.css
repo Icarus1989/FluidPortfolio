@@ -546,7 +546,7 @@ padding-left: 0.5rem;
   background-image: url("/images/waveDef.svg");
   background-size: 700% 180%;
   background-repeat: no-repeat;
-  filter: brightness(0.9);
+  /* filter: brightness(0.9); */
   /* background: rgb(50, 50, 50) 10% 50% content-box no-repeat url("/images/wave.svg"); */
   /* background: white; */
 
