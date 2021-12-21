@@ -80,7 +80,7 @@ body {
 
   font-size: 9vh;
   font-weight: 500;
-  color: rgb(238, 216, 250);
+  color: rgb(255, 255, 255);
   text-align: center;
   z-index: 0;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
@@ -398,23 +398,30 @@ padding-left: 0.5rem;
 }
 
 #p5Img {
-  height: 3.5vh;
+  height: 7.5vh;
 }
 
 #blenderImg {
-  height: 7vh;
+  height: 6.5vh;
   margin-top: 5%;
 }
 
 .labels {
+  width: 100%;
+  position: relative;
+  top: 20%;
   font-family: 'Libre Baskerville', serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  text-align: center;
   color: white;
 }
 
 .percentage {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  position: relative;
+  top: -50%;
 
 }
 

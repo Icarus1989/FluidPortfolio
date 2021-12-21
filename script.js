@@ -24,7 +24,7 @@ mainElement.addEventListener('scroll', () => {
           resolve();
           // circle.style.transform = `scale(1)`;
         }
-      }, 1000);
+      }, 500);
     }).then(() => {
       // console.log('then...')
 
@@ -43,7 +43,7 @@ mainElement.addEventListener('scroll', () => {
 
 
 
-        circles[i].style.animation = `moveliquid 4s ease-in-out 1`;
+        circles[i].style.animation = `moveliquid 3s ease-in-out 1`;
       }
 
     });
