@@ -543,7 +543,7 @@ padding-left: 0.5rem;
   /* background-position: 100% 50%; */
   /* background-image: linear-gradient(rgba(10, 10, 200, 0.3), rgba(10, 10, 200, 0.3)), url("/images/waveDef.svg"); */
   background-image: url("/images/waveDef.svg");
-  background-color: rgb(50, 50, 50);
+  /* background-color: rgb(50, 50, 50); */
 
   background-size: 700% 180%;
   background-repeat: no-repeat;
