@@ -34,12 +34,12 @@ mainElement.addEventListener('scroll', () => {
         // circles[i].style.backgroundImage = `url("/images/waveDef.svg");`
         // circles[i].style.backgroundSize = "400% ";
 
-        circles[0].style.backgroundPositionY = "55%";
-        circles[1].style.backgroundPositionY = "65%";
-        circles[2].style.backgroundPositionY = "45%";
-        circles[3].style.backgroundPositionY = "55%";
-        circles[4].style.backgroundPositionY = "35%";
-        circles[5].style.backgroundPositionY = "25%";
+        circles[0].style.backgroundPosition = "100% 55%";
+        circles[1].style.backgroundPosition = "100% 65%";
+        circles[2].style.backgroundPosition = "100% 45%";
+        circles[3].style.backgroundPosition = "100% 55%";
+        circles[4].style.backgroundPosition = "100% 35%";
+        circles[5].style.backgroundPosition = "100% 25%";
 
 
 
