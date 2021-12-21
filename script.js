@@ -13,43 +13,39 @@ mainElement.addEventListener('scroll', () => {
       setTimeout(() => {
         for (let circle of circles) {
           let middle = circle.clientHeight / 2;
+          // circle.style.width = "12vh";
+          // circle.style.height = "12vh";
           // circle.style.height = `100%`;
           // circle.style.background = `conic-gradient(from 270deg at 50% 100%, transparent, 180deg, white 180deg 181deg, rgb(12, 61, 248) 181deg 360deg)`
           circle.style.borderRadius = `100%`;
-          circle.style.transform = `translate(0px, ${middle}px) scale(1.0)`;
+          // circle.style.transform = `translate(0px, ${middle}px) scale(1.0)`;
+          circle.style.transform = `scale(1.0)`;
           // circle.style.border = `1vh solid white`;
           resolve();
           // circle.style.transform = `scale(1)`;
         }
-      }, 500);
+      }, 1000);
     }).then(() => {
-      console.log('then...')
-      // for (let circle of circles) {
-      //   let canvasContainer = document.createElement('div');
-      //   canvasContainer.style.position = "absolute";
-      //   canvasContainer.style.top = 0;
-      //   canvasContainer.style.left = 0;
-      //   canvasContainer.style.zIndex = 0;
-      //   circle.append(canvasContainer);
+      // console.log('then...')
 
-      //   let canvas = function (cnv) {
-      //     cnv.setup = function () {
-      //       cnv.createCanvas(circle.clientWidth, circle.clientHeight);
-      //       cnv.background(220);
-      //     }
-      //     cnv.draw = function () {
+      // let limits = [80, 90, 70, 80, 60, 50];
 
-      //     }
-      //   }
-      //   new p5(canvas, canvasContainer);
-      // }
-      // setTimeout(() => {
-      //   for (let i = 0; i < circles.length; i++) {
-      // console.log('log');
-      // circles[0].style.background = `conic-gradient(from 270deg at 50% 20%, transparent, 180deg, white 180deg 181deg, rgb(12, 61, 248) 181deg 360deg)`;
-      // circles[0].style.backgroundPosition = `50% 20%`;
-      // }
-      // }, 1000);
+      for (let i = 0; i < circles.length; i++) {
+        // circles[i].style.backgroundImage = `url("/images/waveDef.svg");`
+        // circles[i].style.backgroundSize = "400% ";
+
+        circles[0].style.backgroundPositionY = "55%";
+        circles[1].style.backgroundPositionY = "65%";
+        circles[2].style.backgroundPositionY = "45%";
+        circles[3].style.backgroundPositionY = "55%";
+        circles[4].style.backgroundPositionY = "35%";
+        circles[5].style.backgroundPositionY = "25%";
+
+
+
+        circles[i].style.animation = `moveliquid 4s ease-in-out 1`;
+      }
+
     });
 
 
