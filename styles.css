@@ -10,7 +10,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background: linear-gradient(#5619ff 0%, rgb(132, 49, 255) 60%);
+  background: linear-gradient(rgb(1, 55, 231) 0%, rgb(56, 0, 185) 60%);
 
   z-index: -1;
 }
@@ -531,12 +531,21 @@ padding-left: 0.5rem;
 
 .skillDetail {
   display: grid;
-  place-items: start center;
-  width: 14vh;
-  height: 14vh;
+  place-items: center;
+  width: 12vh;
+  height: 12vh;
   border: 8px solid rgb(12, 61, 248);
   /* attenzione border, ridimensionamento inaspettato */
   border-radius: 100%;
+
+  background-color: rgb(50, 50, 50);
+  background-position: 68% 60%;
+  background-image: url("/images/waveFive.svg");
+  background-size: 600%;
+  background-repeat: no-repeat;
+  /* background: rgb(50, 50, 50) 10% 50% content-box no-repeat url("/images/wave.svg"); */
+  /* background: white; */
+
   /* background: conic-gradient(from 270deg, transparent, 180deg, white 180deg 181deg, rgb(12, 61, 248) 181deg 360deg); */
   /* background-position: 50% 80%; */
   /* background: rgb(12, 61, 248); */
@@ -546,40 +555,71 @@ padding-left: 0.5rem;
   /* background: radial-gradient(rgb(50, 50, 50) 55%, rgb(12, 61, 248) 45% 55%, transparent 55% 80%, rgb(12, 61, 248) 80%), conic-gradient(#E34C26 240deg, rgb(132, 49, 255) 240deg); */
   /* circular skill bar */
 
-  background: linear-gradient(to top, rgb(23, 11, 217) 50% 51%, rgb(50, 50, 50) 51%);
+  /* background: radial-gradient(rgb(50, 50, 50) 20%, transparent 20%), linear-gradient(to top, rgb(23, 11, 217) 50% 51%, rgb(50, 50, 50) 51%); */
   /* filter: drop-shadow(1vh 1vh 0vh rgba(23, 11, 217, 1.0)); */
   /* background-position: 80% 50%; */
-  transition: all 1.5s ease-in-out;
+  /* transition: all 1.5s ease-in-out; */
   transform: translate(0, -50%) scale(0.0);
 
+  animation: moveliquid 6s linear infinite;
+
 }
+
+@keyframes moveliquid {
+  0% {
+    background-position: 0% 60%;
+
+    /* background: radial-gradient(rgb(50, 50, 50) 20%, transparent 20%), linear-gradient(to top, rgb(23, 11, 217) 50% 51%, rgb(50, 50, 50) 51%); */
+
+  }
+
+  50% {
+    background-position: 100% 60%;
+  }
+
+  100% {
+    background-position: 0% 60%;
+
+    /* background: radial-gradient(rgb(50, 50, 50) 20%, transparent 20%), linear-gradient(to top, rgb(23, 11, 217) 80% 81%, rgb(50, 50, 50) 81%); */
+
+  }
+}
+
 
 .skillDetail>svg {
   /* width: 100%; */
   /* color: #E34C26; */
+  height: 8vh;
+
+  color: white;
+  /* text-shadow: 10px 0px 30px rgb(50, 50, 50); */
   /* filter: drop-shadow(6px 6px 6px black); */
-  margin-top: 5%;
+
+  /* margin-top: 5%; */
+  /* background: rgb(50, 50, 50); */
   /* border: 1vh solid black; */
 }
 
 .fa-html5 {
-  height: 45%;
-  color: #E34C26;
+  /* height: 10vh; */
+  /* color: #E34C26; */
 }
 
 .fa-css3-alt {
-  height: 45%;
-  color: #264DE4;
+  /* height: 45%; */
+  /* height: 10vh; */
+  /* color: #264DE4; */
 }
 
 .fa-js-square {
-  height: 40%;
-  color: #F0DB4F;
+  /* height: 10vh; */
+  /* height: 40%; */
+  /* color: #F0DB4F; */
 }
 
 .fa-node-js {
   height: 40%;
-  color: #3C837A;
+  /* color: #3C837A; */
 }
 
 .skillDetail>a>img {
@@ -776,4 +816,35 @@ padding-left: 0.5rem;
   background-repeat: no-repeat;
   background-position: center;
   filter: drop-shadow(2px 2px 3px rgb(12, 61, 248)) drop-shadow(-2px -2px 3px rgb(12, 61, 248));
+}
+
+#containerFive {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 0.8fr 0.2fr;
+  width: 100%;
+  height: 95vh;
+}
+
+#titlePageFive {
+  color: white;
+  /* width: 200px; */
+  /* border: 1px solid tomato; */
+  font-family: 'Dancing Script', cursive;
+  font-size: 6vh;
+  filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
+
+}
+
+#contacts>span {
+  color: white;
+  font-size: 4.7vh;
+}
+
+#contacts>span>a>i {
+  color: white;
+  filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
+
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
