@@ -115,13 +115,13 @@ body {
   display: grid;
   grid-template-columns: minmax(35%, 1fr) 1fr;
   width: 90vw;
-  height: 90%;
+  height: 85%;
   font-weight: 400;
   font-family: 'Libre Baskerville', serif;
   color: rgb(220, 220, 220);
   border-radius: 3vh;
   /* background: linear-gradient(45deg, rgba(7, 123, 244, 0.5) 10%, rgba(255, 255, 255, 0.0) 50%); */
-  margin-top: 10%;
+  margin-top: 8vh;
 
   /* scroll-snap-align: center; */
 
@@ -561,6 +561,11 @@ padding-left: 0.5rem;
   top: -10%;
   height: 100%;
   line-height: 1rem;
+}
+
+.linksInt>i {
+  height: 6vh;
+  color: rgb()
 }
 
 #titleContTest {
