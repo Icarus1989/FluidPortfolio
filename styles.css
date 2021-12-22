@@ -563,9 +563,15 @@ padding-left: 0.5rem;
   line-height: 1rem;
 }
 
+.linksInt {
+  color: rgb(74, 162, 255);
+  font-size: 5vh;
+  text-decoration: none;
+}
+
 .linksInt>i {
-  height: 6vh;
-  color: rgb()
+  color: rgb(74, 162, 255);
+
 }
 
 #titleContTest {
