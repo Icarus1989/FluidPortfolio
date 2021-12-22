@@ -62,7 +62,7 @@ mainElement.addEventListener('scroll', () => {
             clearInterval(increaseOpacity);
             opacity = 1.0;
           }
-        }, 200);
+        }, 100);
 
 
       }

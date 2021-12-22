@@ -50,7 +50,7 @@ body {
   height: 100%;
 
   display: grid;
-  place-items: center;
+  place-items: start center;
 
 
   border-bottom: 4px solid blue;
@@ -120,8 +120,10 @@ body {
   font-family: 'Libre Baskerville', serif;
   color: rgb(220, 220, 220);
   border-radius: 3vh;
-  background: linear-gradient(45deg, #5619ff59 25%, rgba(255, 255, 255, 0.0) 40%)
-    /* scroll-snap-align: center; */
+  /* background: linear-gradient(45deg, rgba(7, 123, 244, 0.5) 10%, rgba(255, 255, 255, 0.0) 50%); */
+  margin-top: 5%;
+
+  /* scroll-snap-align: center; */
 
 }
 
@@ -140,7 +142,7 @@ body {
 #titlePageTwo {
   color: white;
   font-family: 'Dancing Script', cursive;
-  font-size: 5vh;
+  font-size: 5.5vh;
   text-align: center;
   text-justify: auto;
   padding-top: 10%;
@@ -180,8 +182,10 @@ body {
   height: 100%;
   background: transparent;
   border: 2px solid transparent;
-  box-shadow: inset 0vh 2vh 3vh rgba(12, 61, 248, 1.0);
+  box-shadow: inset 0vh 0.1vh rgba(12, 61, 248, 1.0);
   border-radius: 15px;
+  filter: contrast(90%);
+
 }
 
 #imgContainer>a>img {
@@ -192,9 +196,8 @@ body {
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
   /* border-radius: 10%; */
-  box-shadow: 0vh 0.5vh 0.5vh black;
-  filter: contrast(90%);
-  /* filter: contrast(90%) drop-shadow(0vh 1vh 0.5vh black); */
+  /* box-shadow: 0vh 1.0vh 0.5vh black; */
+  filter: drop-shadow(0vh 1vh 1.0vh rgb(21, 11, 217));
   margin-top: 10%;
   margin-bottom: 0%;
   opacity: 1.0;
