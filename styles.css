@@ -145,7 +145,9 @@ body {
   text-justify: auto;
   padding-top: 10%;
   padding-bottom: 10%;
-  filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
+  /* text-shadow: 3px 0px 3px rgb(7, 123, 244), -3px 0px 3px rgb(7, 123, 244); */
+  filter: drop-shadow(2px 5px 1px rgb(74, 162, 255));
+  /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
 }
 
 .canvasContainer {
@@ -164,9 +166,10 @@ body {
   place-items: center;
   width: fit-content;
   height: auto;
-  border: 1vh solid rgb(40, 53, 147);
-  border-radius: 10%;
-  background: linear-gradient(rgba(12, 61, 248, 0.7) 90%, rgba(23, 11, 217, 1.0));
+  border: 0.5vh solid rgb(7, 123, 244);
+  /* border-radius: 10%; */
+  border-radius: 15px;
+  background: linear-gradient(rgb(23, 11, 217) 90%, rgb(7, 123, 244));
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
@@ -174,9 +177,11 @@ body {
 
 #imgContainer>a {
   width: 100%;
-  height: auto;
+  height: 100%;
+  background: transparent;
+  border: 2px solid transparent;
   box-shadow: inset 0vh 2vh 3vh rgba(12, 61, 248, 1.0);
-  border-radius: 10%;
+  border-radius: 15px;
 }
 
 #imgContainer>a>img {
@@ -184,8 +189,12 @@ body {
   width: 100%;
   height: auto;
   z-index: 2;
-  border-radius: 10%;
-  filter: drop-shadow(0vh 1vh 1vh black) contrast(90%) drop-shadow(1vh -1vh 1vh rgba(12, 61, 248, 0.7));
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  /* border-radius: 10%; */
+  box-shadow: 0vh 0.5vh 0.5vh black;
+  filter: contrast(90%);
+  /* filter: contrast(90%) drop-shadow(0vh 1vh 0.5vh black); */
   margin-top: 10%;
   margin-bottom: 0%;
   opacity: 1.0;
@@ -199,6 +208,8 @@ body {
   position: relative;
   padding-top: 0vh;
   padding-bottom: 4vh;
+
+  /* border-left: 0.2vh solid rgb(7, 123, 244); */
 }
 
 .textCanvas {
@@ -208,7 +219,7 @@ body {
   z-index: 0;
 
   /* box-shadow: 0 0.5vh rgb(12, 61, 248); */
-  filter: drop-shadow(0vh 0.6vh 0px rgb(12, 61, 248));
+  filter: drop-shadow(-0.1vh 0.8vh 0px rgb(7, 123, 244)) drop-shadow(0.4vh 0vh 0px rgb(7, 123, 244));
 }
 
 .textField>p {
