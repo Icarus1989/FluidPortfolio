@@ -7,6 +7,11 @@ let mainElement = document.querySelector('#main');
 let circles = document.querySelectorAll('.skillDetail');
 console.log(circles);
 
+let percentages = document.querySelectorAll('.percentage');
+let labels = document.querySelectorAll('.labels');
+console.log(labels);
+let opacity = 0.1;
+
 mainElement.addEventListener('scroll', () => {
   if (window.pageYOffset > sections[2].getBoundingClientRect().y) {
     let promise = new Promise(resolve => {
@@ -28,7 +33,7 @@ mainElement.addEventListener('scroll', () => {
     }).then(() => {
       // console.log('then...')
 
-      // let limits = [80, 90, 70, 80, 60, 50];
+      let limits = [80, 90, 70, 80, 60, 50];
 
       for (let i = 0; i < circles.length; i++) {
         // circles[i].style.backgroundImage = `url("/images/waveDef.svg");`
@@ -41,9 +46,25 @@ mainElement.addEventListener('scroll', () => {
         circles[4].style.backgroundPosition = "100% 35%";
         circles[5].style.backgroundPosition = "100% 25%";
 
-
-
         circles[i].style.animation = `moveliquid 3s ease-in-out 1`;
+
+
+        let increaseOpacity = setInterval(() => {
+          // console.log(percentages[i].textContent);
+          percentages[i].textContent = `${Number(percentages[i].textContent.slice(0, percentages[i].textContent.length - 1)) + (3)}%`;
+          if (Number(percentages[i].textContent.slice(0, percentages[i].textContent.length - 1)) > limits[i]) {
+            percentages[i].textContent = `${limits[i]}%`;
+          }
+          labels[i].style.opacity = opacity;
+          percentages[i].style.opacity = opacity;
+          opacity = opacity + 0.005;
+          if (opacity >= 1.0) {
+            clearInterval(increaseOpacity);
+            opacity = 1.0;
+          }
+        }, 50);
+
+
       }
 
     });
