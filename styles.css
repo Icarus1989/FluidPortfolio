@@ -218,7 +218,7 @@ body {
   left: 0;
   z-index: 0;
 
-  box-shadow: 0.5vh 0vh rgb(7, 123, 244);
+  /* box-shadow: 0.5vh 0vh rgb(7, 123, 244); */
   filter: drop-shadow(0vh 0.9vh 0px rgb(7, 123, 244));
 }
 
