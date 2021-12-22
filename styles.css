@@ -218,8 +218,8 @@ body {
   left: 0;
   z-index: 0;
 
-  /* box-shadow: 0 0.5vh rgb(12, 61, 248); */
-  filter: drop-shadow(-0.1vh 0.8vh 0px rgb(7, 123, 244)) drop-shadow(0.4vh 0vh 0px rgb(7, 123, 244));
+  box-shadow: 0.5vh 0vh rgb(7, 123, 244);
+  filter: drop-shadow(0vh 0.9vh 0px rgb(7, 123, 244));
 }
 
 .textField>p {
@@ -246,6 +246,8 @@ padding-left: 0.5rem;
   flex-wrap: wrap;
   justify-content: start;
   align-content: space-around;
+  filter: drop-shadow(0vh -0.6vh 0px rgb(7, 123, 244));
+
 }
 
 #textBoxOne {
@@ -614,7 +616,7 @@ padding-left: 0.5rem;
 }
 
 #contacts>span>a>i {
-  color: white;
+  color: rgb(74, 162, 255);
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
 
   margin-left: 0.5rem;
