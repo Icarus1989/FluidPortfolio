@@ -59,6 +59,23 @@ mainElement.addEventListener('scroll', () => {
 
 buttonsContainer.children[0].style.color = "rgb(7, 123, 244)";
 
+containerFour.addEventListener('scroll', () => {
+  for (let i = 0; i < works.length; i++) {
+    buttons[i].style.color = "rgb(12, 61, 248)";
+    if (containerFour.scrollLeft > works[i].offsetLeft - 5 && containerFour.scrollLeft < works[i].offsetLeft + works[i].clientWidth) {
+      // console.log('page two');
+      buttons[i].style.color = "rgb(7, 123, 244)";
+    }
+  }
+  // if (containerFour.scrollLeft > works[1].offsetLeft - 5 && containerFour.scrollLeft < works[2].offsetLeft) {
+  //   console.log('page two');
+  // } else if (containerFour.scrollLeft > works[2].offsetLeft - 5 && containerFour.scrollLeft < works[3].offsetLeft) {
+  //   console.log('page three');
+  // } else if (containerFour.scrollLeft > works[3].offsetLeft - 5) {
+  //   console.log('page four');
+  // }
+});
+
 buttonsContainer.addEventListener('click', (event) => {
   for (let button of buttons) {
     if (event.target == button) {
