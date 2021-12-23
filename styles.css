@@ -588,9 +588,10 @@ padding-left: 0.5rem;
   color: rgb(74, 162, 255);
   font-size: 2rem;
   text-decoration: none;
-  margin-left: 0.1vh;
-  margin-right: 0.1vh;
+  margin-left: 0.5vh;
+  margin-right: 0.5vh;
   /* border: 1px solid black; */
+
 
 }
 
@@ -602,7 +603,13 @@ padding-left: 0.5rem;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  /* flex-direction: column; */
+  flex-grow: 1;
+  flex-wrap: wrap;
+  /* place-items: center; */
+  align-content: space-around;
+  justify-content: center;
 
 }
 
@@ -676,6 +683,8 @@ padding-left: 0.5rem;
 #buttonsContainer {
   position: relative;
   top: -200%;
+  width: 40vw;
+
 }
 
 #buttonsContainer>button {
@@ -685,4 +694,5 @@ padding-left: 0.5rem;
   font-size: 30px;
   background: transparent;
   border: 1px solid transparent;
+  filter: 2px 2px 1px black;
 }

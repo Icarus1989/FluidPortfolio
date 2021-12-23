@@ -1,17 +1,17 @@
 let mainElement = document.querySelector('#main');
 let circles = document.querySelectorAll('.skillDetail');
 let buttonsContainer = document.querySelector('#buttonsContainer');
+let containerFour = document.querySelector('#containerFour');
+
+let works = document.querySelectorAll('.works');
+let buttons = buttonsContainer.children;
+
 console.log(circles);
 
 let percentages = document.querySelectorAll('.percentage');
 let labels = document.querySelectorAll('.labels');
 console.log(labels);
 let opacity = 0.1;
-
-console.log(mainElement.children[3].getBoundingClientRect());
-console.log(buttonsContainer.children);
-
-// buttonsContainer.style.top = mainElement.children[3].getBoundingClientRect().bottom + 'px';
 
 mainElement.addEventListener('scroll', () => {
   if (window.pageYOffset > sections[2].getBoundingClientRect().y) {
@@ -39,7 +39,6 @@ mainElement.addEventListener('scroll', () => {
 
         // migliorabile
         let increaseOpacity = setInterval(() => {
-          // console.log(percentages[i].textContent);
           percentages[i].textContent = `${Number(percentages[i].textContent.slice(0, percentages[i].textContent.length - 1)) + (3)}%`;
           if (Number(percentages[i].textContent.slice(0, percentages[i].textContent.length - 1)) > limits[i]) {
             percentages[i].textContent = `${limits[i]}%`;
@@ -54,9 +53,23 @@ mainElement.addEventListener('scroll', () => {
         }, 100);
         // migliorabile
       }
-
     });
+  }
+});
 
+buttonsContainer.children[0].style.color = "rgb(7, 123, 244)";
 
+buttonsContainer.addEventListener('click', (event) => {
+  for (let button of buttons) {
+    if (event.target == button) {
+      button.style.color = "rgb(7, 123, 244)";
+      containerFour.scrollTo({
+        top: 0,
+        left: works[Array.from(event.target.parentElement.children).indexOf(event.target)].offsetLeft,
+        behavior: "smooth"
+      });
+    } else {
+      button.style.color = "rgb(12, 61, 248)";
+    }
   }
 });
