@@ -683,8 +683,15 @@ padding-left: 0.5rem;
 
 #buttonsContainer {
   position: relative;
-  top: -200%;
+  bottom: 10vh;
   width: 40vw;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  /* filter: 2px 2px 1px white; */
+
 
 }
 
@@ -695,5 +702,4 @@ padding-left: 0.5rem;
   font-size: 30px;
   background: transparent;
   border: 1px solid transparent;
-  filter: 2px 2px 1px black;
 }
