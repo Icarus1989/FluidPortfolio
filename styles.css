@@ -354,8 +354,8 @@ padding-left: 0.5rem;
 .skillDetail {
   display: grid;
   place-items: center;
-  width: 25vw;
-  height: 25vw;
+  width: 23vw;
+  height: 23vw;
   border: 8px solid rgb(12, 61, 248);
   /* attenzione border, ridimensionamento inaspettato */
   border-radius: 100%;
@@ -690,7 +690,7 @@ padding-left: 0.5rem;
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   /* flex-wrap: wrap; */
   /* filter: 2px 2px 1px white; */
 
