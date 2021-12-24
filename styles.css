@@ -691,7 +691,7 @@ padding-left: 0.5rem;
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* filter: 2px 2px 1px white; */
 
 
@@ -700,6 +700,7 @@ padding-left: 0.5rem;
 #buttonsContainer>button {
   /* height: 5vh; */
 
+  width: 8vw;
   color: rgb(12, 61, 248);
   font-size: 30px;
   background: transparent;
