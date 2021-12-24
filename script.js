@@ -63,7 +63,7 @@ containerFour.addEventListener('scroll', () => {
   for (let i = 0; i < works.length; i++) {
     buttons[i].style.color = "rgb(12, 61, 248)";
     // buttons[i].style.fontSize = "30px";
-    if (containerFour.scrollLeft > works[i].offsetLeft - 5 && containerFour.scrollLeft < works[i].offsetLeft + works[i].clientWidth) {
+    if (containerFour.scrollLeft > works[i].offsetLeft - 5 && containerFour.scrollLeft < works[i].offsetLeft + works[i].clientWidth - 5) {
       // console.log('page two');
       buttons[i].style.color = "rgb(7, 123, 244)";
       // buttons[i].style.fontSize = "34px";

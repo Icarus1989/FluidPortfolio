@@ -685,6 +685,7 @@ padding-left: 0.5rem;
 #buttonsContainer {
   position: relative;
   bottom: 12vh;
+  max-width: 150px;
   width: 40vw;
   z-index: 20;
   display: flex;
@@ -700,9 +701,23 @@ padding-left: 0.5rem;
 #buttonsContainer>button {
   /* height: 5vh; */
 
+  /* cursor: pointer; */
   width: 8vw;
   color: rgb(12, 61, 248);
   font-size: 30px;
   background: transparent;
   border: 1px solid transparent;
+}
+
+/* #buttonsContainer>button:active {
+  background: transparent;
+} */
+
+#footerText {
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+}
+
+#footerText>span {
+  color: red;
 }

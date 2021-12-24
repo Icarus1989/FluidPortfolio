@@ -175,9 +175,9 @@ let canvasTextFieldOne = function (cnv) {
   cnv.setup = function () {
     cnv.createCanvas(wOne, hOne);
     cnv.background(220, 0);
-    particleOne = new Particle(cnv, wOne, hOne, wOne / 2, 0.4, 1.8);
-    particleTwo = new Particle(cnv, wOne, hOne, wOne / 4, 0.6, 1.4);
-    particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.4, 1.0);
+    particleOne = new Particle(cnv, wOne, hOne, wOne / 2, 0.8, 1.8);
+    particleTwo = new Particle(cnv, wOne, hOne, wOne / 4, 1.2, 1.4);
+    particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.8, 1.0);
     cnv.fill(255);
     cnv.rect(wOne / 24, 0, wOne - (2 * wOne / 24), hOne - (particleOne.limit / 0.8), particleOne.r / 4);
   }
@@ -187,9 +187,9 @@ let canvasTextFieldOne = function (cnv) {
     let h = textFields[1].clientHeight;
     cnv.resizeCanvas(w, h);
     cnv.clear();
-    particleOne = new Particle(cnv, w, h, w / 2, 0.4, 1.8);
-    particleTwo = new Particle(cnv, w, h, w / 4, 0.6, 1.4);
-    particleThree = new Particle(cnv, w, h, w * (3 / 4), 0.7, 0.7);
+    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8);
+    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4);
+    particleThree = new Particle(cnv, w, h, w * (3 / 4), 0.8, 1.0);
     cnv.fill(255);
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
   }
@@ -221,9 +221,9 @@ let canvasTextFieldTwo = function (cnv) {
   cnv.setup = function () {
     cnv.createCanvas(wTwo, hTwo);
     cnv.background(220, 0);
-    particleOne = new Particle(cnv, wTwo, hTwo, wTwo / 2, 0.6, 1.8);
-    particleTwo = new Particle(cnv, wTwo, hTwo, wTwo / 4, 0.4, 1.0);
-    particleThree = new Particle(cnv, wTwo, hTwo, wTwo * (3 / 4), 0.4, 1.6);
+    particleOne = new Particle(cnv, wTwo, hTwo, wTwo / 2, 0.8, 1.8);
+    particleTwo = new Particle(cnv, wTwo, hTwo, wTwo / 4, 1.2, 1.4);
+    particleThree = new Particle(cnv, wTwo, hTwo, wTwo * (3 / 4), 1.4, 1.6);
     cnv.rect(wTwo / 24, 0, wTwo - (2 * wTwo / 24), hTwo - (particleOne.limit / 0.8), particleOne.r / 4);
   }
 
@@ -232,9 +232,9 @@ let canvasTextFieldTwo = function (cnv) {
     let h = textFields[1].clientHeight;
     cnv.resizeCanvas(w, h);
     cnv.clear();
-    particleOne = new Particle(cnv, w, h, w / 2, 0.4, 1.8);
-    particleTwo = new Particle(cnv, w, h, w / 4, 0.6, 1.4);
-    particleThree = new Particle(cnv, w, h, w * (3 / 4), 0.7, 0.7);
+    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8);
+    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4);
+    particleThree = new Particle(cnv, w, h, w * (3 / 4), 1.4, 1.6);
     cnv.fill(255);
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
   }
@@ -268,9 +268,9 @@ let canvasTextFieldThree = function (cnv) {
   cnv.setup = function () {
     cnv.createCanvas(wThree, hThree);
     cnv.background(220, 0);
-    particleOne = new Particle(cnv, wThree, hThree, wThree / 2, 0.4, 1.8);
-    particleTwo = new Particle(cnv, wThree, hThree, wThree / 4, 0.6, 1.4);
-    particleThree = new Particle(cnv, wThree, hThree, wThree * (3 / 4), 0.7, 0.7);
+    particleOne = new Particle(cnv, wThree, hThree, wThree / 2, 0.8, 1.8);
+    particleTwo = new Particle(cnv, wThree, hThree, wThree / 4, 1.2, 1.4);
+    particleThree = new Particle(cnv, wThree, hThree, wThree * (3 / 4), 1.4, 0.7);
     cnv.rect(wThree / 24, 0, wThree - (2 * wThree / 24), hThree - (particleOne.limit / 0.9), particleOne.r / 4);
   }
 
@@ -279,9 +279,9 @@ let canvasTextFieldThree = function (cnv) {
     let h = textFields[2].clientHeight;
     cnv.resizeCanvas(w, h);
     cnv.clear();
-    particleOne = new Particle(cnv, w, h, w / 2, 0.4, 1.8);
-    particleTwo = new Particle(cnv, w, h, w / 4, 0.6, 1.4);
-    particleThree = new Particle(cnv, w, h, w * (3 / 4), 0.7, 0.7);
+    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8);
+    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4);
+    particleThree = new Particle(cnv, w, h, w * (3 / 4), 1.4, 0.7);
     cnv.fill(255);
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
   }
