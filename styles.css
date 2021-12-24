@@ -461,6 +461,7 @@ padding-left: 0.5rem;
   overflow-x: scroll;
   overflow-y: none;
   scroll-snap-type: x mandatory;
+  position: relative;
 }
 
 .works {
