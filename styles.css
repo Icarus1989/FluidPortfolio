@@ -354,8 +354,8 @@ padding-left: 0.5rem;
 .skillDetail {
   display: grid;
   place-items: center;
-  width: 12vh;
-  height: 12vh;
+  width: 25vw;
+  height: 25vw;
   border: 8px solid rgb(12, 61, 248);
   /* attenzione border, ridimensionamento inaspettato */
   border-radius: 100%;
@@ -460,6 +460,7 @@ padding-left: 0.5rem;
   height: 95vh;
   overflow-x: scroll;
   overflow-y: none;
+  scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   position: relative;
 }
@@ -683,13 +684,14 @@ padding-left: 0.5rem;
 
 #buttonsContainer {
   position: relative;
-  bottom: 10vh;
+  bottom: 12vh;
   width: 40vw;
   z-index: 20;
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   /* filter: 2px 2px 1px white; */
 
 
