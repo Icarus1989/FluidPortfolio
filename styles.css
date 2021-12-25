@@ -113,7 +113,8 @@ body {
 #containerTwo {
 
   display: grid;
-  grid-template-columns: minmax(35%, 1fr) 1fr;
+  grid-template-columns: minmax(35%, 0.9fr) 1fr;
+  /* per modifica width */
   width: 90vw;
   height: 85%;
   font-weight: 400;
