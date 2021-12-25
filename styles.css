@@ -142,7 +142,7 @@ body {
 #titlePageTwo {
   color: white;
   font-family: 'Dancing Script', cursive;
-  font-size: 5.5vh;
+  font-size: 5vh;
   text-align: center;
   text-justify: auto;
   padding-top: 10%;
@@ -211,11 +211,14 @@ body {
 
 .textField {
   font-size: 1.7vh;
+  /* line-height: 1rem; */
   background: transparent;
   text-align: start;
   position: relative;
   padding-top: 0vh;
   padding-bottom: 4vh;
+  display: grid;
+  place-items: center;
 
   /* border-left: 0.2vh solid rgb(7, 123, 244); */
 }
@@ -232,12 +235,12 @@ body {
 
 .textField>p {
   color: white;
-  padding-left: 0.4rem;
-  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.1rem;
   padding-top: 0vh;
   padding-bottom: 1vh;
   margin-top: 0vh;
-  margin-bottom: 1vh;
+  margin-bottom: 0vh;
   z-index: 21;
 }
 
@@ -303,8 +306,8 @@ padding-left: 0.5rem;
   flex: 1 1 auto;
   display: grid;
   place-items: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  /* padding-top: 10%;
+  padding-bottom: 10%; */
 }
 
 
@@ -412,7 +415,7 @@ padding-left: 0.5rem;
   color: white;
 }
 
-.fa-html5 {}
+/* .fa-html5 {} */
 
 .fa-node-js {
   height: 40%;
@@ -525,14 +528,14 @@ padding-left: 0.5rem;
 
 .details>p {
   font-family: 'Libre Baskerville', serif;
-  font-size: 1.6vh;
+  font-size: 1.7vh;
   font-weight: 600;
-  color: rgb(230, 230, 230);
+  color: rgb(250, 250, 250);
   text-shadow: 1px 1px rgb(50, 50, 50);
   text-align: start;
   padding-left: 4%;
   padding-right: 4%;
-  line-height: 1.2rem;
+  line-height: 1.1rem;
   z-index: 20;
 
 }
@@ -706,9 +709,12 @@ padding-left: 0.5rem;
   color: rgb(12, 61, 248);
   font-size: 30px;
   background: transparent;
-  padding: 2vw;
-  /* border: 1px solid transparent; */
-  border: 1px solid red;
+  padding-left: 2vw;
+  padding-top: 0vw;
+  padding-right: 2vw;
+  padding-bottom: 0vw;
+  border: 1px solid transparent;
+  /* border: 1px solid red; */
   margin: 0;
 }
 
@@ -720,6 +726,7 @@ padding-left: 0.5rem;
   font-family: 'Libre Baskerville', serif;
   font-size: 14px;
   color: white;
+  padding-bottom: 5%;
 }
 
 #footerText>span {
