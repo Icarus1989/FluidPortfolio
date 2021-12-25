@@ -702,7 +702,7 @@ padding-left: 0.5rem;
   /* height: 5vh; */
 
   /* cursor: pointer; */
-  width: 8vw;
+  width: fit-content;
   color: rgb(12, 61, 248);
   font-size: 30px;
   background: transparent;
