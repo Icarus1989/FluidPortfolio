@@ -706,8 +706,10 @@ padding-left: 0.5rem;
   color: rgb(12, 61, 248);
   font-size: 30px;
   background: transparent;
-  border: 1px solid transparent;
+  padding: 2vw;
+  /* border: 1px solid transparent; */
   border: 1px solid red;
+  margin: 0;
 }
 
 /* #buttonsContainer>button:active {
