@@ -685,8 +685,8 @@ padding-left: 0.5rem;
 #buttonsContainer {
   position: relative;
   bottom: 12vh;
-  max-width: 150px;
-  width: 40vw;
+  /* max-width: 150px; */
+  width: 150px;
   z-index: 20;
   display: flex;
   align-items: center;
