@@ -119,10 +119,10 @@ body {
   height: 85%;
   font-weight: 400;
   font-family: 'Libre Baskerville', serif;
-  color: rgb(220, 220, 220);
+  color: rgb(250, 250, 250);
   border-radius: 3vh;
   /* background: linear-gradient(45deg, rgba(7, 123, 244, 0.5) 10%, rgba(255, 255, 255, 0.0) 50%); */
-  margin-top: 8vh;
+  margin-top: 5vh;
 
   /* scroll-snap-align: center; */
 
@@ -733,3 +733,5 @@ padding-left: 0.5rem;
 #footerText>span {
   color: red;
 }
+
+@media only screen and (min-width: 900px)
