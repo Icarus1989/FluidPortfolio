@@ -734,4 +734,8 @@ padding-left: 0.5rem;
   color: red;
 }
 
-@media only screen and (min-width: 900px)
+@media only screen and (min-width: 280px) and (max-width: 480px) and (orientation: portrait) {}
+
+@media only screen and (min-width: 481px) and (max-width: 899px) {}
+
+@media only screen and (min-width: 900px) {}
