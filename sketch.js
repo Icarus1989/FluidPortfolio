@@ -13,14 +13,16 @@ let offset = 0;
 
 let mainCanvas = function (cnv) {
 
+
+
+  cnv.setup = function () {
+    cnv.createCanvas(widthM, heightM);
+  }
+
   cnv.windowResized = function () { // per ridimensionamento canvas in caso di resize
     widthM = document.documentElement.clientWidth;
     heightM = document.documentElement.clientHeight;
     cnv.resizeCanvas(widthM, heightM);
-  }
-
-  cnv.setup = function () {
-    cnv.createCanvas(widthM, heightM);
   }
 
   cnv.draw = function () {
@@ -120,9 +122,18 @@ class Particle {
   }
   show() {
 
-    this.p.fill(23, 11, 217);
+    this.p.fill(7, 123, 244);
+    // this.p.noStroke();
+    // this.p.stroke(50, 50, 50);
+    // this.p.strokeWeight(2);
+    // this.p.point(this.pos.x - this.r / 2, this.pos.y);
     this.p.noStroke();
+
     this.p.arc(this.pos.x, this.pos.y, this.r, this.r, 0, this.p.PI);
+    // this.p.fill(50);
+    // this.p.arc(this.pos.x, this.pos.y, this.r / 1.5, this.r / 1.5, 0, this.p.PI);
+
+
 
     return this;
   }
@@ -179,25 +190,34 @@ let canvasTextFieldOne = function (cnv) {
     particleTwo = new Particle(cnv, wOne, hOne, wOne / 4, 1.2, 1.4);
     particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.8, 1.0);
     cnv.fill(255);
+    cnv.noStroke();
+    // cnv.strokeCap(cnv.ROUND);
+    // cnv.strokeJoin(cnv.ROUND);
+    // cnv.stroke(50, 50, 50);
+    // cnv.strokeWeight(2);
     cnv.rect(wOne / 24, 0, wOne - (2 * wOne / 24), hOne - (particleOne.limit / 0.8), particleOne.r / 4);
   }
 
   cnv.windowResized = function () {
-    let w = textFields[1].clientWidth;
-    let h = textFields[1].clientHeight;
+    let w = textFields[0].clientWidth;
+    let h = textFields[0].clientHeight;
     cnv.resizeCanvas(w, h);
     cnv.clear();
     particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8);
     particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4);
     particleThree = new Particle(cnv, w, h, w * (3 / 4), 0.8, 1.0);
+
     cnv.fill(255);
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
   }
 
   cnv.draw = function () {
+    // cnv.stroke(50);
+    // cnv.strokeWeight(2);
     particleOne.show();
     particleTwo.show();
     particleThree.show();
+
     if (window.pageYOffset > sections[1].getBoundingClientRect().y) {
       particleOne.update();
       particleOne.edges();
@@ -205,6 +225,7 @@ let canvasTextFieldOne = function (cnv) {
       particleTwo.edges();
       particleThree.update();
       particleThree.edges();
+
     }
 
   }

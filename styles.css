@@ -10,7 +10,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background: linear-gradient(rgb(12, 0, 119) 0%, rgb(0, 16, 156) 60%);
+  background: linear-gradient(#000000 0%, #070064 50%);
 
   z-index: -1;
 }
@@ -122,7 +122,7 @@ body {
   color: rgb(250, 250, 250);
   border-radius: 3vh;
   /* background: linear-gradient(45deg, rgba(7, 123, 244, 0.5) 10%, rgba(255, 255, 255, 0.0) 50%); */
-  margin-top: 5vh;
+  margin-top: 4vh;
 
   /* scroll-snap-align: center; */
 
@@ -149,7 +149,7 @@ body {
   padding-top: 10%;
   padding-bottom: 10%;
   /* text-shadow: 3px 0px 3px rgb(7, 123, 244), -3px 0px 3px rgb(7, 123, 244); */
-  filter: drop-shadow(2px 5px 1px rgb(74, 162, 255));
+  filter: drop-shadow(2px 5px 1px rgb(7, 123, 244));
   /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
 }
 
@@ -231,7 +231,7 @@ body {
   z-index: 0;
 
   /* box-shadow: 0.5vh 0vh rgb(7, 123, 244); */
-  filter: drop-shadow(0vh 0.9vh 0px rgb(7, 123, 244));
+  filter: drop-shadow(0vh 0.9vh 0px rgb(12, 61, 248));
 }
 
 .textField>p {
@@ -258,7 +258,7 @@ padding-left: 0.5rem;
   flex-wrap: wrap;
   justify-content: start;
   align-content: space-around;
-  filter: drop-shadow(0vh -0.6vh 0px rgb(7, 123, 244));
+  filter: drop-shadow(0vh -0.6vh 0px rgb(12, 61, 248));
 
 }
 
@@ -519,17 +519,27 @@ padding-left: 0.5rem;
   height: 80%;
   overflow: hidden;
   z-index: 1;
-  background: radial-gradient(ellipse at 20% 10%, rgb(23, 11, 217) 62%, rgb(12, 61, 248) 70%, rgb(12, 61, 248) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 78%, rgba(250, 250, 250, 1.0) 80%);
+  background: radial-gradient(ellipse at 30% 20%, rgb(23, 11, 217) 62%, rgb(12, 61, 248) 70%, rgb(12, 61, 248) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgba(250, 250, 250, 1.0) 80%);
   filter: drop-shadow(0vh 0vh 0.5vh black);
   border-radius: 1.5rem;
 
   border: 1vh solid rgb(7, 123, 244);
+  animation: moveBkg 10s linear 1;
+}
 
+@keyframes moveBkg {
+  from {
+    background: radial-gradient(ellipse at 0% 20%, rgb(23, 11, 217) 62%, rgb(12, 61, 248) 70%, rgb(12, 61, 248) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgba(250, 250, 250, 1.0) 80%);
+  }
+
+  to {
+    background: radial-gradient(ellipse at 30% 20%, rgb(23, 11, 217) 62%, rgb(12, 61, 248) 70%, rgb(12, 61, 248) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgba(250, 250, 250, 1.0) 80%);
+  }
 }
 
 .details>p {
   font-family: 'Libre Baskerville', serif;
-  font-size: 1.7vh;
+  font-size: 65%;
   font-weight: 600;
   color: rgb(250, 250, 250);
   text-shadow: 1px 1px rgb(50, 50, 50);
@@ -738,4 +748,61 @@ padding-left: 0.5rem;
 
 @media only screen and (min-width: 481px) and (max-width: 899px) {}
 
-@media only screen and (min-width: 900px) {}
+@media only screen and (min-width: 900px) {
+
+  #titleTest {
+    font-size: 9vw;
+  }
+
+  #subtitleTest {
+    font-size: 9vh;
+  }
+
+  #containerTwo {
+    width: 90vw;
+    height: 90%;
+    display: grid;
+    grid-template-columns: minmax(35%, 0.9fr) 0.5fr;
+  }
+
+  #titlePageTwo {
+    font-size: 8vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .textField {
+    font-size: 1.7vh;
+    /* line-height: 1rem; */
+    background: transparent;
+    text-align: start;
+    position: relative;
+    padding-top: 0vh;
+    padding-bottom: 6vh;
+    display: grid;
+    place-items: center;
+  }
+
+  #textBoxOne {
+    height: 20vh;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #textBoxTwo {
+    height: 15vh;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #textBoxThree {
+    height: 30vh;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .skillDetail {
+    width: 10vw;
+    height: 10vw;
+  }
+}
