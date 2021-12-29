@@ -10,13 +10,15 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background: linear-gradient(#000000 0%, #070064 50%);
+  /* background: linear-gradient(#9f6cfd 0%, #DA9FF9 50%); */
+  background: #032974;
 
   z-index: -1;
 }
 
 #main {
   z-index: 1000;
+  background: transparent;
 
 }
 
@@ -231,7 +233,7 @@ body {
   z-index: 0;
 
   /* box-shadow: 0.5vh 0vh rgb(7, 123, 244); */
-  filter: drop-shadow(0vh 0.9vh 0px rgb(12, 61, 248));
+  filter: drop-shadow(0vh 0.9vh 0px rgb(7, 123, 244));
 }
 
 .textField>p {
@@ -258,7 +260,7 @@ padding-left: 0.5rem;
   flex-wrap: wrap;
   justify-content: start;
   align-content: space-around;
-  filter: drop-shadow(0vh -0.6vh 0px rgb(12, 61, 248));
+  filter: drop-shadow(0vh -0.6vh 0px rgb(7, 123, 244));
 
 }
 

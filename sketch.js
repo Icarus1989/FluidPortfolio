@@ -37,7 +37,7 @@ let mainCanvas = function (cnv) {
 
     let range = offset + variationX;
     cnv.strokeWeight(3);
-    cnv.fill(12, 61, 248);
+    cnv.fill(7, 123, 244);
     range = range * 1.05;
     cnv.stroke(12, 61, 248);
 
@@ -68,8 +68,8 @@ let mainCanvas = function (cnv) {
 
     // second glue
 
-    cnv.stroke(12, 61, 248);
-    cnv.fill(23, 11, 217);
+    cnv.stroke(7, 123, 244);
+    cnv.fill(12, 61, 248);
     cnv.beginShape();
     cnv.vertex(0, 0);
     cnv.bezierVertex(widthM / 20, 0, 0, heightM / 9 + range, widthM / 20, heightM / 6.0 + range); // prima valle disc + range
@@ -122,7 +122,7 @@ class Particle {
   }
   show() {
 
-    this.p.fill(7, 123, 244);
+    this.p.fill(4, 52, 222);
     // this.p.noStroke();
     // this.p.stroke(50, 50, 50);
     // this.p.strokeWeight(2);
