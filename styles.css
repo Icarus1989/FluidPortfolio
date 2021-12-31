@@ -179,7 +179,7 @@ body {
   border-bottom: 1.1vh solid rgb(245, 210, 32); */
   /* border-radius: 10%; */
   border-radius: 15px;
-  /* background: linear-gradient(rgb(23, 11, 217) 0%, rgb(7, 123, 244) 40%); */
+  background: linear-gradient(transparent 0%, rgb(7, 123, 244) 40%);
   /* background: linear-gradient(transparent 89%, rgb(7, 123, 244) 90%); */
   z-index: 1;
   margin-left: 10%;
@@ -188,8 +188,8 @@ body {
   /* filter: drop-shadow(0vh 0.8vh 0vh rgb(245, 210, 32)); */
 
 
-  position: relative;
-  left: -100%;
+  /* position: relative;
+  left: -50%; */
 }
 
 /* da sistemare!!! */
@@ -210,8 +210,8 @@ body {
 
 #imgContainer>img {
   max-width: 40vh;
-  width: 80vw;
-  height: 50vh;
+  width: 40vw;
+  height: auto;
   z-index: 2;
   /* border: 1px solid white; */
   border-bottom-left-radius: 10%;
@@ -222,6 +222,9 @@ body {
   margin-top: 10%;
   margin-bottom: 0%;
   opacity: 1.0;
+
+  /* position: relative;
+  left: -50%; */
   /* z-index: -1; */
 
   /* filter: drop-shadow(0vh 0.8vh 0vh rgb(245, 210, 32)); */
