@@ -11,7 +11,7 @@ body {
   top: 0;
   left: 0;
   /* background: linear-gradient(#9f6cfd 0%, #DA9FF9 50%); */
-  background: #032974;
+  background: rgb(64, 33, 236);
 
   z-index: -1;
 }
@@ -146,7 +146,7 @@ body {
   width: 100%;
   color: white;
   font-family: 'Dancing Script', cursive;
-  font-size: 9vw;
+  font-size: 11vw;
   text-align: center;
   /* text-justify: auto; */
   padding-top: 10%;
@@ -173,23 +173,28 @@ body {
   /* width: fit-content; */
   width: 40vw;
   height: auto;
-  /* border-left: 0vh solid rgb(245, 210, 32);
-  border-top: 0vh solid rgb(245, 210, 32);
-  border-right: 0vh solid rgb(245, 210, 32);
-  border-bottom: 1.1vh solid rgb(245, 210, 32); */
+  border-left: 0vh solid rgb(15, 15, 15);
+  border-top: 0.8vh solid rgb(15, 15, 15);
+  border-right: 0vh solid rgb(15, 15, 15);
+  border-bottom: 0.8vh solid rgb(15, 15, 15);
   /* border-radius: 10%; */
   border-radius: 15px;
-  background: linear-gradient(transparent 0%, rgb(7, 123, 244) 40%);
+  background: linear-gradient(to left, white 7%, rgb(2, 71, 199) 8%, rgb(2, 71, 199) 92%, white 93%);
+  /* background: radial-gradient(circle at 0% 10%, #333 19%, transparent 20%); */
+  /* background: linear-gradient(white 0%, rgb(7, 123, 244) 40%); */
   /* background: linear-gradient(transparent 89%, rgb(7, 123, 244) 90%); */
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+
+  overflow: hidden;
 
   /* filter: drop-shadow(0vh 0.8vh 0vh rgb(245, 210, 32)); */
 
 
   /* position: relative;
   left: -50%; */
+  box-shadow: inset 0vh -0.5vh black;
 }
 
 /* da sistemare!!! */
@@ -218,10 +223,12 @@ body {
   border-bottom-right-radius: 10%;
   /* border-radius: 10%; */
   /* box-shadow: 0vh 1.0vh 0.5vh black; */
-  filter: drop-shadow(0.8vh 0.6vh 0vh rgb(7, 123, 244)) drop-shadow(-0.8vh -0.6vh 0vh rgb(7, 123, 244));
+  /* filter: drop-shadow(-1.8vh -1.6vh 0vh rgb(7, 123, 244)); */
   margin-top: 10%;
   margin-bottom: 0%;
   opacity: 1.0;
+
+  /* filter: drop-shadow(0vh 1vh 0vh black); */
 
   /* position: relative;
   left: -50%; */
@@ -254,7 +261,7 @@ body {
   z-index: 0;
 
   /* box-shadow: 0.5vh 0vh rgb(7, 123, 244); */
-  filter: drop-shadow(0vh 0.8vh 0px rgb(245, 210, 32));
+  filter: drop-shadow(0vh 0.8vh 0px rgb(15, 15, 15));
 }
 
 .textField>p {
@@ -281,7 +288,7 @@ padding-left: 0.5rem;
   flex-wrap: wrap;
   justify-content: start;
   align-content: space-around;
-  filter: drop-shadow(0vh -0.6vh 0px rgb(245, 210, 32));
+  filter: drop-shadow(0vh -0.6vh 0px rgb(15, 15, 15));
 
 }
 
@@ -354,9 +361,9 @@ padding-left: 0.5rem;
   color: white;
   width: 200px;
   font-family: 'Dancing Script', cursive;
-  font-size: 5.5vh;
+  font-size: 7vh;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
-  margin-top: 25%;
+  margin-top: 23%;
 }
 
 #skills {
@@ -383,7 +390,7 @@ padding-left: 0.5rem;
   place-items: center;
   width: 23vw;
   height: 23vw;
-  border: 8px solid rgb(12, 61, 248);
+  border: 6px solid rgb(15, 15, 15);
   /* attenzione border, ridimensionamento inaspettato */
   border-radius: 100%;
   background-position: 100% 10%;
@@ -543,10 +550,10 @@ padding-left: 0.5rem;
   overflow: hidden;
   z-index: 1;
   background: radial-gradient(ellipse at 30% 20%, rgb(23, 11, 217) 62%, rgb(12, 61, 248) 70%, rgb(12, 61, 248) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgba(250, 250, 250, 1.0) 80%);
-  filter: drop-shadow(0vh 0vh 0.5vh black);
+  /* filter: drop-shadow(0vh 0vh 0.5vh black); */
   border-radius: 1.5rem;
 
-  border: 1vh solid rgb(7, 123, 244);
+  border: 0.8vh solid rgb(15, 15, 15);
   animation: moveBkg 10s linear 1;
 }
 
@@ -701,18 +708,19 @@ padding-left: 0.5rem;
 #titlePageFive {
   color: white;
   font-family: 'Dancing Script', cursive;
-  font-size: 6vh;
+  font-size: 7vh;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
 
 }
 
 #contacts>span {
   color: white;
-  font-size: 4.7vh;
+  /* font-size: 4.7vh; */
+  font-size: 5.5vh;
 }
 
 #contacts>span>a>i {
-  color: rgb(74, 162, 255);
+  color: white;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
 
   margin-left: 0.5rem;
@@ -750,6 +758,11 @@ padding-left: 0.5rem;
   border: 1px solid transparent;
   /* border: 1px solid red; */
   margin: 0;
+
+
+  filter: drop-shadow(0vh 0vh 1vh black);
+  /* text-shadow: 0vh 0vh 0vh rgb(15, 15, 15), -0vh 0.4vh 0vh rgb(15, 15, 15); */
+
 }
 
 /* #buttonsContainer>button:active {

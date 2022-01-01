@@ -39,7 +39,7 @@ let mainCanvas = function (cnv) {
     cnv.strokeWeight(3);
     cnv.fill(7, 123, 244);
     range = range * 1.1;
-    cnv.stroke(7, 123, 244);
+    cnv.stroke(15, 15, 15);
 
     cnv.beginShape();
     cnv.vertex(0, 0);
@@ -69,7 +69,8 @@ let mainCanvas = function (cnv) {
     // second glue
 
     cnv.stroke(7, 123, 244);
-    cnv.fill(12, 61, 248);
+    cnv.fill(8, 21, 145);
+    // cnv.fill(12, 61, 248);
     cnv.beginShape();
     cnv.vertex(0, 0);
     cnv.bezierVertex(widthM / 20, 0, 0, heightM / 9 + range, widthM / 20, heightM / 6.0 + range); // prima valle disc + range
@@ -191,9 +192,9 @@ let canvasTextFieldOne = function (cnv) {
     cnv.createCanvas(wOne, hOne);
     cnv.background(220, 0);
     // cnv.fill(23, 11, 217);
-    particleOne = new Particle(cnv, wOne, hOne, wOne / 2, 0.8, 1.8, 7, 123, 244);
-    particleTwo = new Particle(cnv, wOne, hOne, wOne / 4, 1.2, 1.4, 7, 123, 244);
-    particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.8, 1.0, 7, 123, 244);
+    particleOne = new Particle(cnv, wOne, hOne, wOne / 2, 0.8, 1.8, 3, 102, 207);
+    particleTwo = new Particle(cnv, wOne, hOne, wOne / 4, 1.2, 1.4, 3, 102, 207);
+    particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.8, 1.0, 3, 102, 207);
     cnv.fill(255);
     cnv.noStroke();
     // cnv.strokeCap(cnv.ROUND);
@@ -208,9 +209,9 @@ let canvasTextFieldOne = function (cnv) {
     let h = textFields[0].clientHeight;
     cnv.resizeCanvas(w, h);
     cnv.clear();
-    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8, 7, 123, 244);
-    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4, 7, 123, 244);
-    particleThree = new Particle(cnv, w, h, w * (3 / 4), 0.8, 1.0, 7, 123, 244);
+    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8, 3, 102, 207);
+    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4, 3, 102, 207);
+    particleThree = new Particle(cnv, w, h, w * (3 / 4), 0.8, 1.0, 3, 102, 207);
 
     cnv.fill(255);
     cnv.noStroke();
@@ -248,9 +249,9 @@ let canvasTextFieldTwo = function (cnv) {
   cnv.setup = function () {
     cnv.createCanvas(wTwo, hTwo);
     cnv.background(220, 0);
-    particleOne = new Particle(cnv, wTwo, hTwo, wTwo / 2, 0.8, 1.8, 12, 61, 248);
-    particleTwo = new Particle(cnv, wTwo, hTwo, wTwo / 4, 1.2, 1.4, 12, 61, 248);
-    particleThree = new Particle(cnv, wTwo, hTwo, wTwo * (3 / 4), 1.4, 1.6, 12, 61, 248);
+    particleOne = new Particle(cnv, wTwo, hTwo, wTwo / 2, 0.8, 1.8, 2, 71, 199);
+    particleTwo = new Particle(cnv, wTwo, hTwo, wTwo / 4, 1.2, 1.4, 2, 71, 199);
+    particleThree = new Particle(cnv, wTwo, hTwo, wTwo * (3 / 4), 1.4, 1.6, 2, 71, 199);
     cnv.noStroke();
     cnv.rect(wTwo / 24, 0, wTwo - (2 * wTwo / 24), hTwo - (particleOne.limit / 0.8), particleOne.r / 4);
   }
@@ -260,9 +261,9 @@ let canvasTextFieldTwo = function (cnv) {
     let h = textFields[1].clientHeight;
     cnv.resizeCanvas(w, h);
     cnv.clear();
-    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8, 12, 61, 248);
-    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4, 12, 61, 248);
-    particleThree = new Particle(cnv, w, h, w * (3 / 4), 1.4, 1.6, 12, 61, 248);
+    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8, 2, 71, 199);
+    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4, 2, 71, 199);
+    particleThree = new Particle(cnv, w, h, w * (3 / 4), 1.4, 1.6, 2, 71, 199);
     cnv.noStroke();
     cnv.fill(255);
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
@@ -297,9 +298,9 @@ let canvasTextFieldThree = function (cnv) {
   cnv.setup = function () {
     cnv.createCanvas(wThree, hThree);
     cnv.background(220, 0);
-    particleOne = new Particle(cnv, wThree, hThree, wThree / 2, 0.8, 1.8, 43, 7, 244);
-    particleTwo = new Particle(cnv, wThree, hThree, wThree / 4, 1.2, 1.4, 43, 7, 244);
-    particleThree = new Particle(cnv, wThree, hThree, wThree * (3 / 4), 1.4, 0.7, 43, 7, 244);
+    particleOne = new Particle(cnv, wThree, hThree, wThree / 2, 0.8, 1.8, 3, 61, 221);
+    particleTwo = new Particle(cnv, wThree, hThree, wThree / 4, 1.2, 1.4, 3, 61, 221);
+    particleThree = new Particle(cnv, wThree, hThree, wThree * (3 / 4), 1.4, 0.7, 3, 61, 221);
     cnv.noStroke();
     cnv.rect(wThree / 24, 0, wThree - (2 * wThree / 24), hThree - (particleOne.limit / 0.9), particleOne.r / 4);
   }
@@ -309,9 +310,9 @@ let canvasTextFieldThree = function (cnv) {
     let h = textFields[2].clientHeight;
     cnv.resizeCanvas(w, h);
     cnv.clear();
-    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8, 43, 7, 244);
-    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4, 43, 7, 244);
-    particleThree = new Particle(cnv, w, h, w * (3 / 4), 1.4, 0.7, 43, 7, 244);
+    particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8, 3, 61, 221);
+    particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4, 3, 61, 221);
+    particleThree = new Particle(cnv, w, h, w * (3 / 4), 1.4, 0.7, 3, 61, 221);
     cnv.noStroke();
     cnv.fill(255);
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
