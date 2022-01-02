@@ -191,8 +191,8 @@ body {
   /* background: linear-gradient(white 0%, rgb(7, 123, 244) 40%); */
   /* background: linear-gradient(transparent 89%, rgb(7, 123, 244) 90%); */
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
 
   overflow: hidden;
 
