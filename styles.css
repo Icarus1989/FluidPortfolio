@@ -85,7 +85,9 @@ body {
   color: rgb(255, 255, 255);
   text-align: center;
   z-index: 0;
-  filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
+  /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
+  filter: drop-shadow(3px 3px 1px black);
+
   /* per mobile */
   /* margin-bottom: 20%; */
 
@@ -94,8 +96,9 @@ body {
 #subtitleTest {
   font-family: 'Dancing Script', cursive;
   font-size: 10vw;
-  color: rgb(37, 36, 61);
-  filter: drop-shadow(3px 1px 1px rgb(238, 216, 250));
+  color: rgb(15, 15, 15);
+  /* filter: drop-shadow(2px 2px 1px rgb(250, 250, 250)); */
+  text-shadow: 2px 2px rgb(240, 240, 240);
   margin-bottom: 0%;
   text-align: center;
 }
@@ -151,6 +154,9 @@ body {
   /* text-justify: auto; */
   padding-top: 10%;
   padding-bottom: 10%;
+
+  filter: drop-shadow(3px 3px 1px black);
+
   /* text-shadow: 3px 0px 3px rgb(7, 123, 244), -3px 0px 3px rgb(7, 123, 244); */
   /* filter: drop-shadow(2px 5px 1px rgb(245, 210, 32)); */
   /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
@@ -362,7 +368,8 @@ padding-left: 0.5rem;
   width: 200px;
   font-family: 'Dancing Script', cursive;
   font-size: 7vh;
-  filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
+  /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
+  filter: drop-shadow(3px 3px 1px black);
   margin-top: 23%;
 }
 
@@ -471,6 +478,10 @@ padding-left: 0.5rem;
   text-align: center;
   color: white;
   opacity: 0.0;
+
+
+  filter: drop-shadow(3px 3px 1px black);
+
 }
 
 .percentage {
@@ -480,8 +491,11 @@ padding-left: 0.5rem;
   text-align: center;
   position: relative;
   top: -55%;
-  text-shadow: 2px 2px 1px rgb(12, 61, 248);
+  /* text-shadow: 2px 2px 1px rgb(12, 61, 248); */
   opacity: 0.0;
+
+  filter: drop-shadow(3px 3px 1px black);
+
 
 }
 
@@ -549,15 +563,15 @@ padding-left: 0.5rem;
   height: 80%;
   overflow: hidden;
   z-index: 1;
-  background: radial-gradient(ellipse at 30% 20%, rgb(23, 11, 217) 62%, rgb(12, 61, 248) 70%, rgb(12, 61, 248) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgba(250, 250, 250, 1.0) 80%);
+  background: radial-gradient(ellipse at 30% 20%, rgb(2, 71, 199) 62%, rgb(3, 61, 221) 70%, rgb(3, 61, 221) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgb(15, 15, 15) 81%, rgba(250, 250, 250, 1.0) 82%);
   /* filter: drop-shadow(0vh 0vh 0.5vh black); */
   border-radius: 1.5rem;
 
   border: 0.8vh solid rgb(15, 15, 15);
-  animation: moveBkg 10s linear 1;
+  /* animation: moveBkg 10s linear 1; */
 }
 
-@keyframes moveBkg {
+/* @keyframes moveBkg {
   from {
     background: radial-gradient(ellipse at 0% 20%, rgb(23, 11, 217) 62%, rgb(12, 61, 248) 70%, rgb(12, 61, 248) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgba(250, 250, 250, 1.0) 80%);
   }
@@ -565,7 +579,7 @@ padding-left: 0.5rem;
   to {
     background: radial-gradient(ellipse at 30% 20%, rgb(23, 11, 217) 62%, rgb(12, 61, 248) 70%, rgb(12, 61, 248) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgba(250, 250, 250, 1.0) 80%);
   }
-}
+} */
 
 .details>p {
   font-family: 'Libre Baskerville', serif;
@@ -618,6 +632,9 @@ padding-left: 0.5rem;
   color: rgb(74, 162, 255);
   font-size: 5vh;
   text-decoration: none;
+
+  filter: drop-shadow(3px 3px 1px black);
+
   /* border: 1px solid black; */
 }
 
@@ -636,6 +653,9 @@ padding-left: 0.5rem;
   text-decoration: none;
   margin-left: 0.5vh;
   margin-right: 0.5vh;
+
+  filter: drop-shadow(3px 3px 1px black);
+
   /* border: 1px solid black; */
 
 
@@ -759,8 +779,12 @@ padding-left: 0.5rem;
   /* border: 1px solid red; */
   margin: 0;
 
+  filter: drop-shadow(2px 2px 1px black);
 
-  filter: drop-shadow(0vh 0vh 1vh black);
+
+
+  /* filter: drop-shadow(0vh 0vh 1vh black); */
+
   /* text-shadow: 0vh 0vh 0vh rgb(15, 15, 15), -0vh 0.4vh 0vh rgb(15, 15, 15); */
 
 }
