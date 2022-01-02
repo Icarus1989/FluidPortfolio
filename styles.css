@@ -150,7 +150,7 @@ body {
   width: 40vw;
   color: white;
   font-family: 'Dancing Script', cursive;
-  font-size: 9vw;
+  font-size: 11vw;
   text-align: center;
   /* text-justify: auto; */
   padding-top: 10%;
@@ -158,7 +158,9 @@ body {
 
   filter: drop-shadow(3px 3px 1px black);
 
-  border: 1px solid red;
+  border: 1px solid transparent;
+  /* possibile movimento asse orizzontale */
+
 
   /* text-shadow: 3px 0px 3px rgb(7, 123, 244), -3px 0px 3px rgb(7, 123, 244); */
   /* filter: drop-shadow(2px 5px 1px rgb(245, 210, 32)); */
@@ -173,9 +175,10 @@ body {
   height: auto;
   display: grid;
   place-items: center;
-  grid-template-rows: 0.2fr 0.6fr;
+  grid-template-rows: 0.2fr 0.615fr;
 
-  border: 1px solid green;
+  border: 1px solid transparent;
+  /* possibile movimento asse orizzontale */
 }
 
 #imgContainer {
@@ -372,7 +375,7 @@ padding-left: 0.5rem;
   color: white;
   width: 200px;
   font-family: 'Dancing Script', cursive;
-  font-size: 7vh;
+  font-size: 11vw;
   /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
   filter: drop-shadow(3px 3px 1px black);
   margin-top: 23%;
@@ -733,7 +736,7 @@ padding-left: 0.5rem;
 #titlePageFive {
   color: white;
   font-family: 'Dancing Script', cursive;
-  font-size: 6vh;
+  font-size: 11vw;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
 
 }
@@ -830,10 +833,25 @@ padding-left: 0.5rem;
     grid-template-columns: minmax(35%, 0.9fr) 0.5fr;
   }
 
+  #photoSection {
+    display: grid;
+    place-items: start center;
+    grid-template-rows: 0.3fr 0.8fr;
+  }
+
+  #imgContainer {
+    width: 40vh;
+  }
+
+  #titleTwoContainer {
+    height: auto;
+  }
+
   #titlePageTwo {
-    font-size: 8vh;
+    font-size: 10vh;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin: 0;
   }
 
   .textField {
@@ -869,5 +887,16 @@ padding-left: 0.5rem;
   .skillDetail {
     width: 10vw;
     height: 10vw;
+  }
+
+
+  .labels {
+    font-size: 2rem;
+    filter: drop-shadow(3px 3px 1px black);
+  }
+
+  .percentage {
+    font-size: 2.4rem;
+    filter: drop-shadow(3px 3px 1px black);
   }
 }
