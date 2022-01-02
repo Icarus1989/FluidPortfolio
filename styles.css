@@ -884,6 +884,10 @@ padding-left: 0.5rem;
     padding-right: 15%;
   }
 
+  #titlePageThree {
+    font-size: 5vw;
+  }
+
   .skillDetail {
     width: 10vw;
     height: 10vw;
@@ -898,5 +902,9 @@ padding-left: 0.5rem;
   .percentage {
     font-size: 2.4rem;
     filter: drop-shadow(3px 3px 1px black);
+  }
+
+  #titlePageFive {
+    font-size: 5vw;
   }
 }
