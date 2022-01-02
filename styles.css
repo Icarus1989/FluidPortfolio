@@ -158,6 +158,8 @@ body {
 
   filter: drop-shadow(3px 3px 1px black);
 
+  border: 1px solid red;
+
   /* text-shadow: 3px 0px 3px rgb(7, 123, 244), -3px 0px 3px rgb(7, 123, 244); */
   /* filter: drop-shadow(2px 5px 1px rgb(245, 210, 32)); */
   /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
@@ -172,6 +174,8 @@ body {
   display: grid;
   place-items: center;
   grid-template-rows: 0.2fr 0.6fr;
+
+  border: 1px solid green;
 }
 
 #imgContainer {
