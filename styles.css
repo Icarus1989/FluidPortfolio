@@ -146,7 +146,7 @@ body {
 }
 
 #titlePageTwo {
-  width: 100%;
+  width: fit-content;
   color: white;
   font-family: 'Dancing Script', cursive;
   font-size: 11vw;
@@ -728,7 +728,7 @@ padding-left: 0.5rem;
 #titlePageFive {
   color: white;
   font-family: 'Dancing Script', cursive;
-  font-size: 7vh;
+  font-size: 6vh;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
 
 }
@@ -736,7 +736,7 @@ padding-left: 0.5rem;
 #contacts>span {
   color: white;
   /* font-size: 4.7vh; */
-  font-size: 5.5vh;
+  font-size: 5vh;
 }
 
 #contacts>span>a>i {
