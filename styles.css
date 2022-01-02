@@ -814,7 +814,116 @@ padding-left: 0.5rem;
 
 @media only screen and (min-width: 280px) and (max-width: 480px) and (orientation: portrait) {}
 
-@media only screen and (min-width: 481px) and (max-width: 899px) {}
+@media only screen and (min-width: 481px) and (max-width: 899px) {
+  #titleTest {
+    font-size: 14vw;
+  }
+
+  #subtitleTest {
+    font-size: 10vw;
+  }
+
+  #containerTwo {
+    width: 90vw;
+    height: 90%;
+    display: grid;
+    grid-template-columns: minmax(35%, 0.9fr) 0.8fr;
+  }
+
+  #photoSection {
+    height: auto;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 0.2fr 0.6fr;
+  }
+
+  #titleTwoContainer {
+    height: auto;
+  }
+
+  #titlePageTwo {
+    font-size: 10vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0;
+  }
+
+  .textField {
+    font-size: 1.7vh;
+    /* line-height: 1rem; */
+    background: transparent;
+    text-align: start;
+    position: relative;
+    padding-top: 2vh;
+    padding-bottom: 6vh;
+    display: grid;
+    place-items: center;
+  }
+
+  #textBoxOne {
+    height: 20vh;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #textBoxTwo {
+    height: 15vh;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #textBoxThree {
+    height: 30vh;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #titlePageThree {
+    font-size: 10vw;
+  }
+
+  .skillDetail {
+    width: 20vw;
+    height: 20vw;
+  }
+
+
+  .labels {
+    font-size: 1.8rem;
+    filter: drop-shadow(3px 3px 1px black);
+  }
+
+  .percentage {
+    font-size: 2.2rem;
+    filter: drop-shadow(3px 3px 1px black);
+  }
+
+  #titleContTest>h3 {
+    font-size: 9vw;
+  }
+
+  .details {
+    width: 50vw;
+    border-radius: 2rem;
+    border: 0.8vh solid rgb(15, 15, 15);
+  }
+
+  .details>p {
+    font-size: 1.8vh;
+    line-height: 1.8rem;
+  }
+
+  #buttonsContainer>button {
+    font-size: 8vw;
+    filter: drop-shadow(4px 4px 2px black);
+
+  }
+
+  #footerText {
+    font-size: 2vh;
+  }
+
+}
 
 @media only screen and (min-width: 900px) {
 
