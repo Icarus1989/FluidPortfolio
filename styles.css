@@ -767,7 +767,7 @@ padding-left: 0.5rem;
   font-size: 11vw;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
   overflow-x: visible;
-  border: 1px solid red;
+  border: 1px solid transparent;
 }
 
 #contacts>span {
