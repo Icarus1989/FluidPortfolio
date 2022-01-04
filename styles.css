@@ -649,6 +649,9 @@ padding-left: 0.5rem;
 
   filter: drop-shadow(3px 3px 1px black);
 
+  vertical-align: center;
+
+
   /* border: 1px solid black; */
 }
 
@@ -692,6 +695,8 @@ padding-left: 0.5rem;
   place-items: center;
   align-content: space-around;
   justify-content: center;
+
+  vertical-align: center;
 
 }
 
