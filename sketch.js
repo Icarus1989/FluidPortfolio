@@ -202,6 +202,8 @@ let canvasTextFieldOne = function (cnv) {
     // cnv.stroke(50, 50, 50);
     // cnv.strokeWeight(2);
     cnv.rect(wOne / 24, 0, wOne - (2 * wOne / 24), hOne - (particleOne.limit / 0.8), particleOne.r / 4);
+    document.querySelector('#imgContainer').style.borderRadius = particleOne.r / 4 + 'px';
+
   }
 
   cnv.windowResized = function () {
@@ -216,6 +218,8 @@ let canvasTextFieldOne = function (cnv) {
     cnv.fill(255);
     cnv.noStroke();
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
+    document.querySelector('#imgContainer').style.borderRadius = particleOne.r / 4 + 'px';
+
   }
 
   cnv.draw = function () {
@@ -303,6 +307,8 @@ let canvasTextFieldThree = function (cnv) {
     particleThree = new Particle(cnv, wThree, hThree, wThree * (3 / 4), 1.4, 0.7, 3, 61, 221);
     cnv.noStroke();
     cnv.rect(wThree / 24, 0, wThree - (2 * wThree / 24), hThree - (particleOne.limit / 0.9), particleOne.r / 4);
+    // console.log(particleOne.r / 4);
+    // console.log();
   }
 
   cnv.windowResized = function () {

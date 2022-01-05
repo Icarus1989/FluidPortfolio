@@ -337,13 +337,14 @@ padding-left: 0.5rem;
   margin-left: 0;
   padding-right: 0rem;
   padding-left: 0.5rem;
-  padding-top: 0.5rem;
+  padding-top: 0rem;
   padding-bottom: 0.5rem;
-  line-height: 1.4rem;
+  line-height: 3vh;
   /* per mobile 1.2rem */
   list-style: none;
   background-color: transparent;
   z-index: 20;
+  vertical-align: center;
 }
 
 #textBoxThree {
@@ -1015,16 +1016,20 @@ padding-left: 0.5rem;
   }
 
   #containerTwo {
-    width: 90vw;
+    width: 80vw;
+    max-width: 1000px;
     height: 90%;
     display: grid;
-    grid-template-columns: minmax(35%, 0.9fr) 0.5fr;
+    /* grid-template-columns: minmax(35%, 0.9fr) 0.5fr; */
+    grid-template-columns: 0.8fr 0.8fr;
   }
 
   #photoSection {
     display: grid;
     place-items: start center;
     grid-template-rows: 0.3fr 0.8fr;
+    /* margin-left: 20%;
+    margin-right: 20%; */
   }
 
   #imgContainer {
@@ -1048,26 +1053,48 @@ padding-left: 0.5rem;
     background: transparent;
     text-align: start;
     position: relative;
-    padding-top: 0vh;
-    padding-bottom: 6vh;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
     display: grid;
     place-items: center;
   }
 
+  .textField>p {
+    color: white;
+    padding-left: 0.2rem;
+    padding-right: 0.1rem;
+    padding-top: 0vh;
+    padding-bottom: 4vh;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    z-index: 21;
+    line-height: 1.7rem;
+  }
+
   #textBoxOne {
-    height: 20vh;
+    height: 18vh;
     padding-left: 15%;
     padding-right: 15%;
   }
 
   #textBoxTwo {
-    height: 15vh;
+    height: 20vh;
     padding-left: 15%;
     padding-right: 15%;
+    place-items: start;
+  }
+
+  #textBoxTwo>ul {
+    padding-right: 0rem;
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
   }
 
   #textBoxThree {
-    height: 30vh;
+    height: 35vh;
     padding-left: 15%;
     padding-right: 15%;
   }
@@ -1092,7 +1119,29 @@ padding-left: 0.5rem;
     filter: drop-shadow(3px 3px 1px black);
   }
 
+  .details {
+    width: 30vw;
+  }
+
+  .details>p {
+    line-height: 1.7rem;
+  }
+
+  #buttonsContainer>button {
+    font-size: 4vw;
+    padding-left: 1vw;
+    padding-top: 0vw;
+    padding-right: 1vw;
+    padding-bottom: 0vw;
+    filter: drop-shadow(4px 4px 2px black);
+
+  }
+
+
+
   #titlePageFive {
     font-size: 5vw;
   }
+
+
 }
