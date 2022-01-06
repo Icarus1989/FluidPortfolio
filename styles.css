@@ -372,7 +372,7 @@ padding-left: 0.5rem;
 #containerThree {
   display: grid;
   place-items: center;
-  grid-template-rows: 0.1fr 1.0fr;
+  grid-template-rows: 0.1fr 0.9fr;
   width: 100%;
   height: 95vh;
 }
@@ -398,7 +398,7 @@ padding-left: 0.5rem;
 
 .skillContainer {
   width: 100%;
-  height: 30vh;
+  height: 100%;
   background: transparent;
   /* border: 1px solid red; */
   display: grid;
@@ -416,7 +416,7 @@ padding-left: 0.5rem;
   border-radius: 100%;
   background-position: 100% 10%;
   /* background-position: 100% 50%; */
-  background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("https://i.ibb.co/FYV4W8z/wave-Def-Mod-Two.png");
+  background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("https://i.ibb.co/XJB7jRS/wave-Def-Mod-Two.webp");
   /* background-image: url("https://i.ibb.co/FYV4W8z/wave-Def-Mod-Two.png"); */
   background-color: rgb(50, 50, 50);
 
@@ -759,7 +759,7 @@ padding-left: 0.5rem;
 #logo {
   width: 10vh;
   height: 13vh;
-  background-image: url("images/watch_dogs__legion_mask_golden_skull .png");
+  background-image: url("images/watch_dogs__legion_mask_golden_skull.webp");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
@@ -872,6 +872,8 @@ padding-left: 0.5rem;
     scrollbar-width: none;
   }
 }
+
+@media only screen and (min-width: 280px) and (max-width: 480px) and (orientation: portrait) {}
 
 @media only screen and (min-width: 481px) and (max-width: 899px) {
   #titleTest {
