@@ -575,6 +575,7 @@ padding-left: 0.5rem;
 .details {
   display: grid;
   place-items: center;
+  grid-template-rows: 1fr 0.3fr;
   width: 60vw;
   height: 80%;
   overflow: hidden;
@@ -646,7 +647,7 @@ padding-left: 0.5rem;
 
 .linksInt {
   display: grid;
-  /* place-items: center; */
+  place-items: center;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   color: rgb(74, 162, 255);
@@ -675,6 +676,7 @@ padding-left: 0.5rem;
   font-size: 2rem;
   text-decoration: none;
 
+  place-items: center;
 
   filter: drop-shadow(3px 3px 1px black);
 
@@ -1139,10 +1141,12 @@ padding-left: 0.5rem;
 
   }
 
-
-
   #titlePageFive {
     font-size: 5vw;
+  }
+
+  #footerText {
+    font-size: 18px;
   }
 
 
