@@ -16,7 +16,6 @@ mainElement.addEventListener('scroll', () => {
     let promise = new Promise(resolve => {
       setTimeout(() => {
         for (let circle of circles) {
-          let middle = circle.clientHeight / 2;
           circle.style.borderRadius = `100%`;
           circle.style.transform = `scale(1.0)`;
           resolve();
@@ -60,21 +59,11 @@ buttonsContainer.children[0].style.color = "rgb(7, 123, 244)";
 containerFour.addEventListener('scroll', () => {
   for (let i = 0; i < works.length; i++) {
     buttons[i].style.color = "rgb(12, 61, 248)";
-    // buttons[i].style.color = "rgb(8, 21, 145)";
-    // buttons[i].style.fontSize = "30px";
     if (containerFour.scrollLeft > works[i].offsetLeft - 5 && containerFour.scrollLeft < works[i].offsetLeft + works[i].clientWidth - 5) {
-      // console.log('page two');
       buttons[i].style.color = "rgb(7, 123, 244)";
-      // buttons[i].style.fontSize = "34px";
     }
   }
-  // if (containerFour.scrollLeft > works[1].offsetLeft - 5 && containerFour.scrollLeft < works[2].offsetLeft) {
-  //   console.log('page two');
-  // } else if (containerFour.scrollLeft > works[2].offsetLeft - 5 && containerFour.scrollLeft < works[3].offsetLeft) {
-  //   console.log('page three');
-  // } else if (containerFour.scrollLeft > works[3].offsetLeft - 5) {
-  //   console.log('page four');
-  // }
+
 });
 
 buttonsContainer.addEventListener('click', (event) => {
@@ -87,8 +76,5 @@ buttonsContainer.addEventListener('click', (event) => {
         behavior: "smooth"
       });
     }
-    // else {
-    //   button.style.color = "rgb(12, 61, 248)";
-    // }
   }
 });
