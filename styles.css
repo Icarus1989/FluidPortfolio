@@ -416,7 +416,8 @@ padding-left: 0.5rem;
   border-radius: 100%;
   background-position: 100% 10%;
   /* background-position: 100% 50%; */
-  background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("https://i.ibb.co/XJB7jRS/wave-Def-Mod-Two.webp");
+  background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("images/wave-Def-Mod-Two.webp");
+  /* background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("https://i.ibb.co/XJB7jRS/wave-Def-Mod-Two.webp"); */
   /* background-image: url("https://i.ibb.co/FYV4W8z/wave-Def-Mod-Two.png"); */
   background-color: rgb(50, 50, 50);
 
@@ -661,7 +662,7 @@ padding-left: 0.5rem;
 
   vertical-align: center;
 
-  border: 1px solid green;
+  /* border: 1px solid green; */
 
 
 
