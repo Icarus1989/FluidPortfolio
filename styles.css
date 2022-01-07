@@ -575,7 +575,7 @@ padding-left: 0.5rem;
 .details {
   display: grid;
   place-items: center;
-  grid-template-rows: 1fr 0.3fr;
+  grid-template-rows: 75% 25%;
   width: 60vw;
   height: 80%;
   overflow: hidden;
@@ -600,7 +600,7 @@ padding-left: 0.5rem;
 
 .details>p {
   font-family: 'Libre Baskerville', serif;
-  font-size: 1.7vh;
+  font-size: 1.6vh;
   font-weight: 600;
   color: rgb(250, 250, 250);
   text-shadow: 1px 1px rgb(50, 50, 50);
@@ -609,6 +609,8 @@ padding-left: 0.5rem;
   padding-right: 4%;
   line-height: 1.1rem;
   z-index: 20;
+
+  /* border: 1px solid red; */
 
 }
 
@@ -638,14 +640,15 @@ padding-left: 0.5rem;
   text-decoration: underline;
 }
 
-.linksContainer {
+/* .linksContainer {
   position: relative;
   top: -10%;
   height: 100%;
   line-height: 1rem;
-}
+} */
 
 .linksInt {
+  height: 100%;
   display: grid;
   place-items: center;
   grid-template-rows: 1fr;
@@ -658,12 +661,16 @@ padding-left: 0.5rem;
 
   vertical-align: center;
 
+  border: 1px solid green;
+
+
 
   /* border: 1px solid black; */
 }
 
 .linksInt>i {
   color: rgb(74, 162, 255);
+  vertical-align: center;
 
 }
 
