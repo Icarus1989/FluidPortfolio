@@ -6,11 +6,9 @@ let containerFour = document.querySelector('#containerFour');
 let works = document.querySelectorAll('.works');
 let buttons = buttonsContainer.children;
 
-console.log(circles);
 
 let percentages = document.querySelectorAll('.percentage');
 let labels = document.querySelectorAll('.labels');
-console.log(labels);
 let opacity = 0.1;
 
 mainElement.addEventListener('scroll', () => {
