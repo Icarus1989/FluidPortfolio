@@ -10,16 +10,13 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  /* background: linear-gradient(#9f6cfd 0%, #DA9FF9 50%); */
   background: rgb(64, 33, 236);
-
   z-index: -1;
 }
 
 #main {
   z-index: 1000;
   background: transparent;
-
 }
 
 .container {
@@ -28,8 +25,6 @@ body {
   overflow-y: scroll;
   outline: 1px dashed lightgray;
   flex: none;
-
-
 }
 
 .container.y {
@@ -50,11 +45,8 @@ body {
 .y.container>section {
   width: 100%;
   height: 100%;
-
   display: grid;
   place-items: start center;
-
-
   border-bottom: 4px solid transparent;
 }
 
@@ -62,10 +54,12 @@ body {
 #containerOne {
   display: grid;
   grid-template-rows: 2fr 0.4fr;
-
   place-items: end center;
   width: 80vw;
   height: 80vh;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
   line-height: 0%;
   background-color: transparent;
 }
@@ -77,41 +71,25 @@ body {
   place-items: start center;
 }
 
-#titleTest {
-  font-family: 'Dancing Script', cursive;
-
+#titlePageOne {
   font-size: 9vh;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
   text-align: center;
   z-index: 0;
-  /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
   filter: drop-shadow(3px 3px 1px black);
-
   /* per mobile */
   /* margin-bottom: 20%; */
-
 }
 
 #subtitleTest {
-  font-family: 'Dancing Script', cursive;
   font-size: 10vw;
-  font-weight: 500;
-  /* color: rgb(15, 15, 15); */
-  /* filter: drop-shadow(2px 2px 1px rgb(250, 250, 250)); */
-  color: rgb(255, 255, 255);
   filter: drop-shadow(3px 3px 1px black);
-  /* text-shadow: 2px 2px rgb(240, 240, 240); */
   margin-bottom: 0%;
   text-align: center;
 }
 
 #containerTwo {
-
   display: grid;
-  /* grid-template-columns: minmax(35%, 0.9fr) 1fr; */
   grid-template-columns: 0.9fr 1fr;
-
   /* per modifica width */
   width: 95vw;
   height: 85%;
@@ -135,12 +113,9 @@ body {
   font-family: 'Dancing Script', cursive;
   font-size: 10vw;
   text-align: center;
-  /* text-justify: auto; */
   padding-top: 10%;
   padding-bottom: 10%;
-
   filter: drop-shadow(3px 3px 1px black);
-
   border: 1px solid transparent;
   /* possibile movimento asse orizzontale */
 }
@@ -150,7 +125,6 @@ body {
   display: grid;
   place-items: center;
   grid-template-rows: 0.2fr 0.615fr;
-
   border: 1px solid transparent;
   /* possibile movimento asse orizzontale */
 }
@@ -158,7 +132,7 @@ body {
 #imgContainer {
   display: grid;
   place-items: center;
-  /* width: fit-content; */
+  width: fit-content;
   width: 40vw;
   height: auto;
   border-left: 0vh solid rgb(15, 15, 15);
@@ -168,20 +142,11 @@ body {
   /* border-radius: 10%; */
   border-radius: 15px;
   background: linear-gradient(to left, white 7%, rgb(2, 71, 199) 8%, rgb(2, 71, 199) 92%, white 93%);
-  /* background: radial-gradient(circle at 0% 10%, #333 19%, transparent 20%); */
-  /* background: linear-gradient(white 0%, rgb(7, 123, 244) 40%); */
-  /* background: linear-gradient(transparent 89%, rgb(7, 123, 244) 90%); */
   z-index: 1;
   margin-left: 0%;
   margin-right: 0%;
 
   overflow: hidden;
-
-  /* filter: drop-shadow(0vh 0.8vh 0vh rgb(245, 210, 32)); */
-
-
-  /* position: relative;
-  left: -50%; */
   box-shadow: inset 0vh -0.5vh black;
 }
 
@@ -325,11 +290,12 @@ body {
   place-items: center;
   grid-template-areas: "a b c"
     "d e f";
+  font-family: 'Libre Baskerville', serif;
 }
 
 .skillContainer {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background: transparent;
   /* border: 1px solid red; */
   display: grid;
@@ -397,31 +363,22 @@ body {
   width: 100%;
   position: relative;
   top: 20%;
-  font-family: 'Libre Baskerville', serif;
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
   color: white;
   opacity: 0.0;
-
-
   filter: drop-shadow(3px 3px 1px black);
-
 }
 
 .percentage {
-  font-family: 'Libre Baskerville', serif;
   color: white;
   font-size: 1.2rem;
   text-align: center;
   position: relative;
   top: -55%;
-  /* text-shadow: 2px 2px 1px rgb(12, 61, 248); */
   opacity: 0.0;
-
   filter: drop-shadow(3px 3px 1px black);
-
-
 }
 
 #containerFour {
@@ -460,7 +417,6 @@ body {
   place-items: center;
   transition: all 1s ease-in-out;
   scroll-snap-align: center;
-
 }
 
 .details {
@@ -490,9 +446,6 @@ body {
   padding-right: 4%;
   line-height: 1.1rem;
   z-index: 20;
-
-  /* border: 1px solid red; */
-
 }
 
 .linksInt {
@@ -504,9 +457,7 @@ body {
   color: rgb(74, 162, 255);
   font-size: 5vh;
   text-decoration: none;
-
   filter: drop-shadow(3px 3px 1px black);
-
   vertical-align: center;
 }
 
@@ -524,21 +475,13 @@ body {
   color: rgb(74, 162, 255);
   font-size: 2rem;
   text-decoration: none;
-
   place-items: center;
-
   filter: drop-shadow(3px 3px 1px black);
-
-  /* border: 1px solid black; */
-
-
 }
 
 .linksIntDouble>img {
   height: 4vh;
 }
-
-
 
 .details>#linksDoubleContainer {
   width: 100%;
@@ -549,9 +492,7 @@ body {
   place-items: center;
   align-content: space-around;
   justify-content: center;
-
   vertical-align: center;
-
 }
 
 #first {
@@ -665,9 +606,6 @@ body {
 }
 
 #buttonsContainer>button {
-  /* height: 5vh; */
-
-  /* cursor: pointer; */
   width: fit-content;
   color: rgb(12, 61, 248);
   font-size: 30px;
@@ -677,7 +615,6 @@ body {
   padding-right: 2vw;
   padding-bottom: 0vw;
   border: 1px solid transparent;
-  /* border: 1px solid red; */
   margin: 0;
   filter: drop-shadow(2px 2px 1px black);
 }
@@ -728,8 +665,6 @@ body {
     margin-top: 8vh;
   }
 
-
-
   #photoSection {
     height: auto;
     display: grid;
@@ -749,8 +684,8 @@ body {
   }
 
   .textField {
-    font-size: 1.8vh;
-    /* line-height: 1rem; */
+    font-size: 1.6vh;
+    /* line-height: 1.6vh; */
     background: transparent;
     text-align: start;
     position: relative;
@@ -787,14 +722,13 @@ body {
     height: 20vw;
   }
 
-
   .labels {
     font-size: 1.8rem;
     filter: drop-shadow(3px 3px 1px black);
   }
 
   .percentage {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     filter: drop-shadow(3px 3px 1px black);
   }
 
@@ -809,8 +743,8 @@ body {
   }
 
   .details>p {
-    font-size: 1.8vh;
-    line-height: 1.8rem;
+    font-size: 1.6vh;
+    line-height: 1.6rem;
   }
 
   #buttonsContainer>button {
@@ -935,7 +869,7 @@ body {
   }
 
   .percentage {
-    font-size: 2.4rem;
+    font-size: 2rem;
     filter: drop-shadow(3px 3px 1px black);
   }
 
