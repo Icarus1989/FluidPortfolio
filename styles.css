@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -831,13 +833,15 @@ body {
   }
 
   #linksDoubleContainer {
-    /* place-items: start center; */
-    align-items: start;
-    justify-items: center;
+    /* align-items: start;
+    justify-items: center; */
+    margin-bottom: 3vh;
   }
 
   .linksIntDouble>img {
     height: 6vh;
+    place-items: start center;
+
   }
 
   #buttonsContainer {
@@ -859,6 +863,13 @@ body {
     width: 16vh;
     height: 18vh;
   }
+
+  /* #first {
+    margin-bottom: 
+  }
+  
+  #second {
+  } */
 
   #titlePageFive {
     font-size: 7vw;
