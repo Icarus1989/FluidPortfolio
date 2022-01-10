@@ -163,6 +163,7 @@ body {
 }
 
 .textField {
+  /* height: fit-content; */
   font-size: 1.6vh;
   /* line-height: 1rem; */
   background: transparent;
@@ -170,6 +171,7 @@ body {
   position: relative;
   padding-top: 0vh;
   padding-bottom: 4vh;
+
   display: grid;
   place-items: center;
 
@@ -189,7 +191,7 @@ body {
 .textField>p {
   color: white;
   padding-left: 0.2rem;
-  padding-right: 0.1rem;
+  padding-right: 0rem;
   padding-top: 0vh;
   padding-bottom: 1vh;
   margin-top: 0vh;
@@ -209,8 +211,8 @@ body {
 
 #textBoxOne {
   height: 20%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 6vw;
+  padding-right: 6vw;
   flex: 1 1 auto;
   display: grid;
   place-items: center;
@@ -223,8 +225,8 @@ body {
   flex: 1 1 auto;
   display: grid;
   place-items: center start;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 6vw;
+  padding-right: 6vw;
   color: white;
 }
 
@@ -248,8 +250,8 @@ body {
 #textBoxThree {
   height: 38%;
   /* <----- Cmabiare in % */
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 6vw;
+  padding-right: 6vw;
   flex: 1 1 auto;
   display: grid;
   place-items: center;
@@ -649,8 +651,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 280px) and (max-width: 480px) and (orientation: portrait) {}
-
 @media only screen and (min-height: 280px) and (max-height: 480px) and (orientation: landscape) {
   #bkgCanvasContainer {
     position: fixed;
@@ -672,7 +672,9 @@ body {
 
 
 
-  #containerTwo {}
+  #containerTwo {
+    grid-template-columns: 0.9fr 0.9fr;
+  }
 
   #photoSection {
     display: grid;
@@ -706,42 +708,164 @@ body {
   }
 
   .textField {
+    height: 90%;
+    font-size: 2.6vh;
+    line-height: 4.5vh;
     margin: 1%;
   }
 
+  .textField>p {
+    padding-bottom: 5vh;
+  }
+
   #textBoxOne {
-    height: 30vh;
+    height: 35vh;
     flex: 1 1 10vw;
 
     display: grid;
     place-items: center start;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 
   #textBoxTwo {
     flex: 1 1 10vw;
-    height: 30vh;
+    height: 35vh;
     display: grid;
     place-items: center start;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 
   #textBoxThree {
     /* flex: 1 1 10vw; */
 
     height: 50vh;
-    flex: 2 2 20vw;
+    flex: 1 1 25vw;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: grid;
+    place-items: start center;
+    text-align-last: left;
 
   }
 
   #titlePageThree {
     font-size: 7vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
   }
 
 
 
+  .skillContainer {
+    height: 35vh;
+  }
 
   .skillDetail {
     width: 20vh;
     height: 20vh;
+  }
+
+  .skillDetail>svg {
+    height: 11vh;
+    color: white;
+  }
+
+  .fa-node-js {
+    height: 11vh;
+  }
+
+  #p5Img {
+    height: 11vh;
+  }
+
+  #blenderImg {
+    height: 10vh;
+    margin-top: 5%;
+  }
+
+  .labels {
+    margin-bottom: 0;
+    z-index: 20;
+  }
+
+  .works {
+    /* grid-template-rows: auto 0.9fr 0.1fr; */
+    grid-template-rows: 0.1fr auto 0.1fr;
+    place-items: start center;
+  }
+
+  #titleContTest {
+    grid-template-rows: 10vh auto;
+  }
+
+  #titleContTest>h3 {
+    font-size: 12vh;
+  }
+
+  .details {
+    width: 30vw;
+    grid-template-rows: 80% 20%;
+    margin-top: 3%;
+  }
+
+  .details>p {
+    font-size: 2.5vh;
+    line-height: 0.7rem;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .linksInt {
+    font-size: 7vh;
+    place-items: start center;
+  }
+
+  .linksInt>img {
+    height: 7vh;
+  }
+
+  #linksDoubleContainer {
+    /* place-items: start center; */
+    align-items: start;
+    justify-items: center;
+  }
+
+  .linksIntDouble>img {
+    height: 6vh;
+  }
+
+  #buttonsContainer {
+    /* margin-top: 2%; */
+  }
+
+  #buttonsContainer>button {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
+
+  .emojiCont {
+    font-size: 12vh;
+    position: relative;
+    top: 60%;
+  }
+
+  #logo {
+    width: 16vh;
+    height: 18vh;
+  }
+
+  #titlePageFive {
+    font-size: 7vw;
+  }
+
+  #contacts>span {
+    font-size: 5vw;
   }
 }
 
