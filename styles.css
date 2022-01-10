@@ -264,7 +264,7 @@ body {
 
 .myDatas {
   font-family: 'Dancing Script', cursive;
-  font-size: 16px;
+  font-size: 3vh;
   padding-left: 0.1em;
   padding-right: 0.1em;
 }
@@ -734,9 +734,18 @@ body {
     flex: 1 1 10vw;
     height: 35vh;
     display: grid;
-    place-items: center start;
+    place-items: center;
     padding-left: 2vw;
     padding-right: 2vw;
+  }
+
+  #textBoxTwo>ul {
+    line-height: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  .myDatas {
+    font-size: 5vh;
   }
 
   #textBoxThree {
@@ -839,13 +848,14 @@ body {
   }
 
   .linksIntDouble>img {
-    height: 6vh;
+    font-size: 6vh;
+    height: 5vh;
     place-items: start center;
 
   }
 
   #buttonsContainer {
-    /* margin-top: 2%; */
+    margin-top: 1vh;
   }
 
   #buttonsContainer>button {
