@@ -6,10 +6,11 @@ let containerFour = document.querySelector('#containerFour');
 let works = document.querySelectorAll('.works');
 let buttons = buttonsContainer.children;
 
-
 let percentages = document.querySelectorAll('.percentage');
 let labels = document.querySelectorAll('.labels');
 let opacity = 0.1;
+
+let returnBtn = document.querySelector('#returnBtn');
 
 mainElement.addEventListener('scroll', () => {
   if (window.pageYOffset > sections[2].getBoundingClientRect().y) {
@@ -52,6 +53,18 @@ mainElement.addEventListener('scroll', () => {
       }
     });
   }
+
+  if (window.pageYOffset >= sections[4].getBoundingClientRect().y) {
+    returnBtn.style.display = "block";
+    returnBtn.style.position = 'absolute';
+    // returnBtn.style.right = mainElement.clientWidth - mainElement.clientWidth / 1.065 + "px";
+    returnBtn.style.right = mainElement.clientWidth / 12 + "px";
+    returnBtn.style.bottom = "1%";
+    // returnBtn.style.width = "10vh";
+    // returnBtn.style.height = "10vh";
+  } else if (window.pageYOffset < sections[4].getBoundingClientRect().y) {
+    returnBtn.style.display = "none";
+  }
 });
 
 buttonsContainer.children[0].style.color = "rgb(7, 123, 244)";
@@ -81,3 +94,11 @@ buttonsContainer.addEventListener('click', (event) => {
 let myYears = Math.floor((Date.now() - new Date("1989-12-09")) / (100 * 315569262));
 let ageLabel = document.querySelectorAll('.myDatas')[0];
 ageLabel.textContent = myYears;
+
+returnBtn.addEventListener('click', () => {
+  mainElement.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  })
+});

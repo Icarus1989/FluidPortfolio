@@ -595,6 +595,24 @@ body {
   color: red;
 }
 
+#returnBtn {
+  font-family: 'Dancing Script', cursive;
+  font-size: 8vw;
+  color: white;
+  background: rgb(8, 21, 145);
+  bottom: 10%;
+  width: 10vh;
+  height: 10vh;
+  border-left: 1vw solid rgb(15, 15, 15);
+  border-top: 1vw solid rgb(15, 15, 15);
+  /* border-top: 1vw solid rgb(7, 123, 244); */
+  border-right: 1vw solid rgb(15, 15, 15);
+  border-bottom: 1vw solid rgb(15, 15, 15);
+  border-radius: 100%;
+  box-shadow: inset 0vw -4vw rgb(7, 123, 244);
+  transition: 1s ease all;
+}
+
 @media only screen and (min-width: 280px) and (max-width: 480px) and (orientation: portrait) {
   #titlePageTwo {
     padding-top: 10%;
