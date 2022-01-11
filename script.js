@@ -69,7 +69,6 @@ containerFour.addEventListener('scroll', () => {
 buttonsContainer.addEventListener('click', (event) => {
   for (let button of buttons) {
     if (event.target == button) {
-      // button.style.color = "rgb(7, 123, 244)";
       containerFour.scrollTo({
         top: 0,
         left: works[Array.from(event.target.parentElement.children).indexOf(event.target)].offsetLeft,
@@ -78,3 +77,7 @@ buttonsContainer.addEventListener('click', (event) => {
     }
   }
 });
+
+let myYears = Math.floor((Date.now() - new Date("1989-12-09")) / (100 * 315569262));
+let ageLabel = document.querySelectorAll('.myDatas')[0];
+ageLabel.textContent = myYears;

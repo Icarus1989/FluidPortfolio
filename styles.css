@@ -26,6 +26,7 @@ body {
   grid-template-rows: 100% 100% 100% 100% 100%;
   overflow-y: scroll;
   outline: 1px dashed lightgray;
+  /* controllare outline se necessario */
   flex: none;
 }
 
@@ -78,8 +79,6 @@ body {
   text-align: center;
   z-index: 0;
   filter: drop-shadow(3px 3px 1px black);
-  /* per mobile */
-  /* margin-bottom: 20%; */
 }
 
 #subtitleTest {
@@ -92,7 +91,6 @@ body {
 #containerTwo {
   display: grid;
   grid-template-columns: 0.9fr 1fr;
-  /* per modifica width */
   width: 95vw;
   height: 85%;
   font-weight: 400;
@@ -141,7 +139,6 @@ body {
   border-top: 0.8vh solid rgb(15, 15, 15);
   border-right: 0vh solid rgb(15, 15, 15);
   border-bottom: 0.8vh solid rgb(15, 15, 15);
-  /* border-radius: 10%; */
   border-radius: 15px;
   background: linear-gradient(to left, white 7%, rgb(2, 71, 199) 8%, rgb(2, 71, 199) 92%, white 93%);
   z-index: 1;
@@ -165,19 +162,16 @@ body {
 }
 
 .textField {
-  /* height: fit-content; */
   font-size: 1.6vh;
-  /* line-height: 1rem; */
   background: transparent;
   text-align: start;
   position: relative;
   padding-top: 0vh;
   padding-bottom: 4vh;
-
   display: grid;
   place-items: center;
-
-  /* border-left: 0.2vh solid rgb(7, 123, 244); */
+  padding-left: 6vw;
+  padding-right: 6vw;
 }
 
 .textCanvas {
@@ -185,8 +179,6 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
-
-  /* box-shadow: 0.5vh 0vh rgb(7, 123, 244); */
   filter: drop-shadow(0vh 0.8vh 0px rgb(15, 15, 15));
 }
 
@@ -199,6 +191,7 @@ body {
   margin-top: 0vh;
   margin-bottom: 0vh;
   z-index: 21;
+  color: white;
 }
 
 #textSection {
@@ -218,7 +211,6 @@ body {
   flex: 1 1 auto;
   display: grid;
   place-items: center;
-  color: white;
   z-index: 20;
 }
 
@@ -227,9 +219,6 @@ body {
   flex: 1 1 auto;
   display: grid;
   place-items: center start;
-  padding-left: 6vw;
-  padding-right: 6vw;
-  color: white;
 }
 
 #textBoxTwo>ul {
@@ -242,7 +231,6 @@ body {
   padding-top: 0rem;
   padding-bottom: 0.5rem;
   line-height: 3vh;
-  /* per mobile 1.2rem */
   list-style: none;
   background-color: transparent;
   z-index: 20;
@@ -251,14 +239,9 @@ body {
 
 #textBoxThree {
   height: 38%;
-  /* <----- Cmabiare in % */
-  padding-left: 6vw;
-  padding-right: 6vw;
   flex: 1 1 auto;
   display: grid;
   place-items: center;
-  /* padding-top: 10%;
-  padding-bottom: 10%; */
 }
 
 
@@ -282,7 +265,6 @@ body {
   width: 200px;
   font-family: 'Dancing Script', cursive;
   font-size: 11vw;
-  /* filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black); */
   filter: drop-shadow(3px 3px 1px black);
   margin-top: 23%;
 }
@@ -299,10 +281,7 @@ body {
 }
 
 .skillContainer {
-  /* width: 100%;
-  height: 100%; */
   background: transparent;
-  /* border: 1px solid red; */
   display: grid;
   place-items: center;
 
@@ -311,26 +290,17 @@ body {
 .skillDetail {
   display: grid;
   place-items: center;
-  /* width: 23vw;
-  height: 23vw; */
   width: 13vh;
   height: 13vh;
   border: 6px solid rgb(15, 15, 15);
-  /* attenzione border, ridimensionamento inaspettato */
   border-radius: 100%;
   background-position: 100% 10%;
-  /* background-position: 100% 50%; */
   background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("images/wave-Def-Mod-Two.webp");
-  /* background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("https://i.ibb.co/XJB7jRS/wave-Def-Mod-Two.webp"); */
-  /* background-image: url("https://i.ibb.co/FYV4W8z/wave-Def-Mod-Two.png"); */
   background-color: rgb(50, 50, 50);
-
   background-size: 700% 180%;
   background-repeat: no-repeat;
   transition: all 1.5s ease-in-out;
-  /* transform: translate(0, -50%) scale(0.0); */
   transform: scale(0.0);
-  /* animation: moveliquid 6s linear 1; */
 }
 
 @keyframes moveliquid {
@@ -411,7 +381,6 @@ body {
   font-size: 100%;
   font-weight: 400;
   text-align: center;
-  color: #0b0e0f;
   background: transparent;
   padding: 0;
   margin-top: 0;
@@ -435,15 +404,11 @@ body {
   overflow: hidden;
   z-index: 1;
   background: radial-gradient(ellipse at 30% 20%, rgb(2, 71, 199) 62%, rgb(3, 61, 221) 70%, rgb(3, 61, 221) 75%, rgb(7, 123, 244) 76%, rgb(7, 123, 244) 80%, rgb(15, 15, 15) 81%, rgba(250, 250, 250, 1.0) 82%);
-  /* filter: drop-shadow(0vh 0vh 0.5vh black); */
   border-radius: 1.5rem;
-
   border: 0.8vh solid rgb(15, 15, 15);
-  /* animation: moveBkg 10s linear 1; */
 }
 
 .details>p {
-  font-family: 'Libre Baskerville', serif;
   font-size: 1.6vh;
   font-weight: 600;
   color: rgb(250, 250, 250);
@@ -577,12 +542,10 @@ body {
   border: 1px solid transparent;
   padding-left: 1vw;
   padding-right: 1vw;
-  /* text-align: center; */
 }
 
 #contacts>span {
   color: white;
-  /* font-size: 4.7vh; */
   font-size: 5vh;
 }
 
@@ -599,17 +562,12 @@ body {
 #buttonsContainer {
   position: relative;
   bottom: 12vh;
-  /* max-width: 150px; */
   width: 150px;
   z-index: 20;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  /* filter: 2px 2px 1px white; */
-
-
 }
 
 #buttonsContainer>button {
@@ -927,7 +885,6 @@ body {
 
   .textField {
     font-size: 1.6vh;
-    /* line-height: 1.6vh; */
     background: transparent;
     text-align: start;
     position: relative;
@@ -939,20 +896,14 @@ body {
 
   #textBoxOne {
     height: 20vh;
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   #textBoxTwo {
     height: 15vh;
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   #textBoxThree {
     height: 30vh;
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   #titlePageThree {
@@ -1003,12 +954,12 @@ body {
 
 @media only screen and (min-width: 900px) {
 
-  #titleTest {
-    font-size: 9vw;
+  #titlePageOne {
+    font-size: 11vh;
   }
 
   #subtitleTest {
-    font-size: 9vh;
+    font-size: 8vh;
   }
 
   #containerTwo {
@@ -1016,7 +967,6 @@ body {
     max-width: 1000px;
     height: 90%;
     display: grid;
-    /* grid-template-columns: minmax(35%, 0.9fr) 0.5fr; */
     grid-template-columns: 0.8fr 0.8fr;
   }
 
@@ -1024,8 +974,6 @@ body {
     display: grid;
     place-items: start center;
     grid-template-rows: 0.3fr 0.8fr;
-    /* margin-left: 20%;
-    margin-right: 20%; */
   }
 
   #imgContainer {
@@ -1045,7 +993,6 @@ body {
 
   .textField {
     font-size: 1.7vh;
-    /* line-height: 1rem; */
     background: transparent;
     text-align: start;
     position: relative;
@@ -1071,14 +1018,10 @@ body {
 
   #textBoxOne {
     height: 18vh;
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   #textBoxTwo {
     height: 20vh;
-    padding-left: 15%;
-    padding-right: 15%;
     place-items: start;
   }
 
@@ -1091,8 +1034,6 @@ body {
 
   #textBoxThree {
     height: 35vh;
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   #titlePageThree {
@@ -1106,12 +1047,12 @@ body {
 
 
   .labels {
-    font-size: 2rem;
+    font-size: 3vh;
     filter: drop-shadow(3px 3px 1px black);
   }
 
   .percentage {
-    font-size: 2rem;
+    font-size: 3vh;
     filter: drop-shadow(3px 3px 1px black);
   }
 
@@ -1125,12 +1066,10 @@ body {
 
   .linksInt:hover {
     filter: drop-shadow(2px 2px 2px rgb(12, 61, 248));
-    /* text-decoration: underline; */
   }
 
   .linksIntDouble:hover {
     filter: drop-shadow(2px 2px 2px rgb(12, 61, 248));
-    /* text-decoration: underline; */
   }
 
   #contacts>span>a>i:hover {

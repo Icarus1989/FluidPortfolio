@@ -34,7 +34,6 @@ let mainCanvas = function (cnv) {
     cnv.strokeWeight(4);
     cnv.noFill();
 
-
     let range = offset + variationX;
     cnv.strokeWeight(3);
     cnv.fill(7, 123, 244);
@@ -67,10 +66,8 @@ let mainCanvas = function (cnv) {
     range = offset + variationX;
 
     // second glue
-
     cnv.stroke(7, 123, 244);
     cnv.fill(8, 21, 145);
-    // cnv.fill(12, 61, 248);
     cnv.beginShape();
     cnv.vertex(0, 0);
     cnv.bezierVertex(widthM / 20, 0, 0, heightM / 9 + range, widthM / 20, heightM / 6.0 + range); // prima valle disc + range
@@ -98,16 +95,13 @@ let mainCanvas = function (cnv) {
 
 new p5(mainCanvas, bkgCanvasContainer);
 
-// console.log('VariationX: ' + variationX);
-
 mainElt.addEventListener('scroll', () => {
   offset = -(sections[0].getBoundingClientRect().y) / 10;
 });
 
-
 // Background Animation
 
-// Class
+// Class -->
 
 class Particle {
   constructor(p = p5.instance, w, h, xLoc, pxPerFrame, limit, red, green, blue) {
@@ -128,18 +122,8 @@ class Particle {
   show() {
 
     this.p.fill(this.red, this.green, this.blue);
-    // this.p.noStroke();
-    // this.p.stroke(50, 50, 50);
-    // this.p.strokeWeight(2);
-    // this.p.point(this.pos.x - this.r / 2, this.pos.y);
     this.p.noStroke();
-
     this.p.arc(this.pos.x, this.pos.y, this.r, this.r, 0, this.p.PI);
-    // this.p.fill(50);
-    // this.p.arc(this.pos.x, this.pos.y, this.r / 1.5, this.r / 1.5, 0, this.p.PI);
-
-
-
     return this;
   }
   update() {
@@ -152,12 +136,9 @@ class Particle {
   }
 }
 
-// Class
-
+// <-- Class
 
 let textFields = document.querySelectorAll('.textField');
-
-// canvas zone creation
 
 let canvasContainer = document.createElement('div');
 textFields[0].append(canvasContainer);
@@ -170,8 +151,6 @@ canvasContainerTwo.classList.add('textCanvas');
 let canvasContainerThree = document.createElement('div');
 textFields[2].append(canvasContainerThree);
 canvasContainerThree.classList.add('textCanvas');
-
-// canvas zone creation
 
 let wOne = textFields[0].clientWidth;
 let hOne = textFields[0].clientHeight;
@@ -197,13 +176,8 @@ let canvasTextFieldOne = function (cnv) {
     particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.8, 1.0, 3, 102, 207);
     cnv.fill(255);
     cnv.noStroke();
-    // cnv.strokeCap(cnv.ROUND);
-    // cnv.strokeJoin(cnv.ROUND);
-    // cnv.stroke(50, 50, 50);
-    // cnv.strokeWeight(2);
     cnv.rect(wOne / 24, 0, wOne - (2 * wOne / 24), hOne - (particleOne.limit / 0.8), particleOne.r / 4);
     document.querySelector('#imgContainer').style.borderRadius = particleOne.r / 4 + 'px';
-
   }
 
   cnv.windowResized = function () {
@@ -219,12 +193,9 @@ let canvasTextFieldOne = function (cnv) {
     cnv.noStroke();
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
     document.querySelector('#imgContainer').style.borderRadius = particleOne.r / 4 + 'px';
-
   }
 
   cnv.draw = function () {
-    // cnv.stroke(50);
-    // cnv.strokeWeight(2);
     particleOne.show();
     particleTwo.show();
     particleThree.show();
@@ -236,9 +207,7 @@ let canvasTextFieldOne = function (cnv) {
       particleTwo.edges();
       particleThree.update();
       particleThree.edges();
-
     }
-
   }
 }
 new p5(canvasTextFieldOne, canvasContainer);
@@ -287,8 +256,6 @@ let canvasTextFieldTwo = function (cnv) {
       particleThree.update();
       particleThree.edges();
     }
-
-
   }
 }
 new p5(canvasTextFieldTwo, canvasContainerTwo);
@@ -307,8 +274,6 @@ let canvasTextFieldThree = function (cnv) {
     particleThree = new Particle(cnv, wThree, hThree, wThree * (3 / 4), 1.4, 0.7, 3, 61, 221);
     cnv.noStroke();
     cnv.rect(wThree / 24, 0, wThree - (2 * wThree / 24), hThree - (particleOne.limit / 0.9), particleOne.r / 4);
-    // console.log(particleOne.r / 4);
-    // console.log();
   }
 
   cnv.windowResized = function () {
@@ -338,8 +303,6 @@ let canvasTextFieldThree = function (cnv) {
       particleThree.update();
       particleThree.edges();
     }
-
   }
-
 }
 new p5(canvasTextFieldThree, canvasContainerThree);

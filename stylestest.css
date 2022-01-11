@@ -1,0 +1,63 @@
+#main {
+  z-index: 1000;
+  background: transparent;
+  color: rgb(255, 255, 255);
+
+}
+
+.blackShadow {
+  /* titlePageOne */
+  /* #subtitleTest */
+  /* titlePageTwo */
+  /* titlePageThree */
+  /* .labels */
+  /* .percentage */
+  /* #titleContTest>h3 */
+}
+
+.blueShadow {
+  /* #logo */
+  /* .emojiCont */
+}
+
+.blackAndBlueShadow {
+  /* #titlePageFive */
+  /* #contacts>span>a>i  */
+  /* #buttonsContainer>button */
+}
+
+.colorLightBlue {
+  /* .linksInt */
+  /* .linksIntDouble */
+  /* .linksInt>i */
+}
+
+
+
+/* copia sicurezza: */
+
+
+.skillDetail {
+  display: grid;
+  place-items: center;
+  /* width: 23vw;
+  height: 23vw; */
+  width: 13vh;
+  height: 13vh;
+  border: 6px solid rgb(15, 15, 15);
+  /* attenzione border, ridimensionamento inaspettato */
+  border-radius: 100%;
+  background-position: 100% 10%;
+  /* background-position: 100% 50%; */
+  background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("images/wave-Def-Mod-Two.webp");
+  /* background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("https://i.ibb.co/XJB7jRS/wave-Def-Mod-Two.webp"); */
+  /* background-image: url("https://i.ibb.co/FYV4W8z/wave-Def-Mod-Two.png"); */
+  background-color: rgb(50, 50, 50);
+
+  background-size: 700% 180%;
+  background-repeat: no-repeat;
+  transition: all 1.5s ease-in-out;
+  /* transform: translate(0, -50%) scale(0.0); */
+  transform: scale(0.0);
+  /* animation: moveliquid 6s linear 1; */
+}
