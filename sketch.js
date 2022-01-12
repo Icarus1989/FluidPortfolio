@@ -1,25 +1,19 @@
 let bkgCanvasContainer = document.querySelector('#bkgCanvasContainer');
 let mainElt = document.querySelector('#main');
-
 let sections = document.querySelectorAll('section');
 
-// Background Animation
-
+// Background Animation -->
 let widthM = document.documentElement.clientWidth;
 let heightM = document.documentElement.clientHeight;
-
 let variationX = document.documentElement.clientWidth / 6;
 let offset = 0;
-
 let mainCanvas = function (cnv) {
-
-
 
   cnv.setup = function () {
     cnv.createCanvas(widthM, heightM);
   }
 
-  cnv.windowResized = function () { // per ridimensionamento canvas in caso di resize
+  cnv.windowResized = function () {
     widthM = document.documentElement.clientWidth;
     heightM = document.documentElement.clientHeight;
     cnv.resizeCanvas(widthM, heightM);
@@ -30,16 +24,13 @@ let mainCanvas = function (cnv) {
     cnv.clear();
     cnv.stroke(255);
     cnv.strokeWeight(24);
-
     cnv.strokeWeight(4);
     cnv.noFill();
-
     let range = offset + variationX;
     cnv.strokeWeight(3);
     cnv.fill(7, 123, 244);
     range = range * 1.1;
     cnv.stroke(15, 15, 15);
-
     cnv.beginShape();
     cnv.vertex(0, 0);
     cnv.bezierVertex(widthM / 20, 0, 0, heightM / 9 + range, widthM / 20, heightM / 6.0 + range); // prima valle disc + range
@@ -65,13 +56,10 @@ let mainCanvas = function (cnv) {
 
     range = offset + variationX;
 
-    // second glue
     cnv.stroke(7, 123, 244);
     cnv.fill(8, 21, 145);
     cnv.beginShape();
     cnv.vertex(0, 0);
-
-    // riga  4 5 6
     cnv.bezierVertex(widthM / 20, 0, 0, heightM / 9 + range, widthM / 20, heightM / 6.0 + range); // prima valle disc + range
     cnv.bezierVertex(widthM / 12, heightM / 5.1 + range, widthM / 10, heightM / 7 + range, widthM / 10, heightM / 8 + range);
     cnv.bezierVertex(widthM / 8.9, heightM / 6 + range / 2, widthM / 9.2, heightM / 12 + range / 2, widthM / 9.1, heightM / 20 + range / 2);
@@ -99,12 +87,9 @@ new p5(mainCanvas, bkgCanvasContainer);
 
 mainElt.addEventListener('scroll', () => {
   offset = -(sections[0].getBoundingClientRect().y) / 10;
-});
+}); // <-- Background Animation
 
-// Background Animation
-
-// Class -->
-
+// Second page animation -->
 class Particle {
   constructor(p = p5.instance, w, h, xLoc, pxPerFrame, limit, red, green, blue) {
     this.p = p;
@@ -138,33 +123,25 @@ class Particle {
   }
 }
 
-// <-- Class
-
 let textFields = document.querySelectorAll('.textField');
-
 let canvasContainer = document.createElement('div');
 textFields[0].append(canvasContainer);
 canvasContainer.classList.add('textCanvas');
-
 let canvasContainerTwo = document.createElement('div');
 textFields[1].append(canvasContainerTwo);
 canvasContainerTwo.classList.add('textCanvas');
-
 let canvasContainerThree = document.createElement('div');
 textFields[2].append(canvasContainerThree);
 canvasContainerThree.classList.add('textCanvas');
 
 let wOne = textFields[0].clientWidth;
 let hOne = textFields[0].clientHeight;
-
 let wTwo = textFields[1].clientWidth;
 let hTwo = textFields[1].clientHeight;
-
 let wThree = textFields[2].clientWidth;
 let hThree = textFields[2].clientHeight;
 
 let canvasTextFieldOne = function (cnv) {
-
   let particleOne;
   let particleTwo;
   let particleThree;
@@ -214,9 +191,7 @@ let canvasTextFieldOne = function (cnv) {
 }
 new p5(canvasTextFieldOne, canvasContainer);
 
-
 let canvasTextFieldTwo = function (cnv) {
-
   let particleOne;
   let particleTwo;
   let particleThree;
@@ -245,7 +220,6 @@ let canvasTextFieldTwo = function (cnv) {
   }
 
   cnv.draw = function () {
-
     particleOne.show();
     particleTwo.show();
     particleThree.show();
@@ -292,7 +266,6 @@ let canvasTextFieldThree = function (cnv) {
   }
 
   cnv.draw = function () {
-
     particleOne.show();
     particleTwo.show();
     particleThree.show();
@@ -307,4 +280,4 @@ let canvasTextFieldThree = function (cnv) {
     }
   }
 }
-new p5(canvasTextFieldThree, canvasContainerThree);
+new p5(canvasTextFieldThree, canvasContainerThree); // <-- Second page animation

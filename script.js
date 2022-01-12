@@ -2,14 +2,11 @@ let mainElement = document.querySelector('#main');
 let circles = document.querySelectorAll('.skillDetail');
 let buttonsContainer = document.querySelector('#buttonsContainer');
 let containerFour = document.querySelector('#containerFour');
-
 let works = document.querySelectorAll('.works');
 let buttons = buttonsContainer.children;
-
 let percentages = document.querySelectorAll('.percentage');
 let labels = document.querySelectorAll('.labels');
 let opacity = 0.1;
-
 let returnBtn = document.querySelector('#returnBtn');
 
 mainElement.addEventListener('scroll', () => {
