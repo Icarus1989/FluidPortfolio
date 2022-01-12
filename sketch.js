@@ -45,10 +45,10 @@ let mainCanvas = function (cnv) {
     cnv.bezierVertex(widthM / 20, 0, 0, heightM / 9 + range, widthM / 20, heightM / 6.0 + range); // prima valle disc + range
     cnv.bezierVertex(widthM / 12, heightM / 5.1 + range, widthM / 10, heightM / 7 + range, widthM / 10, heightM / 8 + range);
     cnv.bezierVertex(widthM / 8.9, heightM / 6 + range / 2, widthM / 9.2, heightM / 12 + range / 2, widthM / 9.1, heightM / 20 + range / 2);
-    cnv.bezierVertex(widthM / 8.9, heightM / 30 + range / 3, widthM / 8.5, heightM / 30 + range / 4, widthM / 6.5, heightM / 34 + range / 4);
-    cnv.bezierVertex(widthM / 4, heightM / 50 + range * 0.3, widthM / 4.85, heightM / 13 + range * 1.3, widthM / 4.8, heightM / 12 + range * 1.3); // primo picco disc
+    cnv.bezierVertex(widthM / 8.9, heightM / 30 + range / 3, widthM / 8.5, heightM / 32 + range / 4, widthM / 6, heightM / 30 + range / 4);
+    cnv.bezierVertex(widthM / 4.6, heightM / 26 + range * 0.3, widthM / 4.9, heightM / 13 + range * 1.3, widthM / 4.85, heightM / 10 + range * 1.3); // primo picco disc
     cnv.bezierVertex(widthM / 4.8, heightM / 4 + range * 1.3, widthM / 4, heightM / 4 + range * 1.3, widthM / 3.5, heightM / 4 + range * 1.3); //seconda valle disc
-    cnv.bezierVertex(widthM / 2.9, heightM / 4.2 + range * 1.3, widthM / 3.1, heightM / 5.5 + range * 0.5, widthM / 3, heightM / 8 + range * 0.5); //seconda valle sal bass
+    cnv.bezierVertex(widthM / 2.9, heightM / 4.2 + range * 1.3, widthM / 3, heightM / 5.2 + range * 0.5, widthM / 3, heightM / 7 + range * 0.5); //seconda valle sal bass
     cnv.bezierVertex(widthM / 2.9, heightM / 4 + range * 0.8, widthM / 2.4, heightM / 6 + range * 0.8, widthM / 2.4, heightM / 18 + range * 0.8); // seconda valle sal alt
     cnv.bezierVertex(widthM / 2.45, heightM / 20 + range / 3.5, widthM / 2.2, heightM / 24 + range / 3.5, widthM / 2.2, heightM / 22 + range / 3.5); //secondo picco sal
     cnv.bezierVertex(widthM / 2.2, heightM / 24.5 + range / 3.5, widthM / 2.0, heightM / 24 + range / 3.5, widthM / 2.0, heightM / 7 + range / 3.5); //secondo picco disc
@@ -70,13 +70,15 @@ let mainCanvas = function (cnv) {
     cnv.fill(8, 21, 145);
     cnv.beginShape();
     cnv.vertex(0, 0);
+
+    // riga  4 5 6
     cnv.bezierVertex(widthM / 20, 0, 0, heightM / 9 + range, widthM / 20, heightM / 6.0 + range); // prima valle disc + range
     cnv.bezierVertex(widthM / 12, heightM / 5.1 + range, widthM / 10, heightM / 7 + range, widthM / 10, heightM / 8 + range);
     cnv.bezierVertex(widthM / 8.9, heightM / 6 + range / 2, widthM / 9.2, heightM / 12 + range / 2, widthM / 9.1, heightM / 20 + range / 2);
-    cnv.bezierVertex(widthM / 8.9, heightM / 30 + range / 3, widthM / 8.5, heightM / 30 + range / 4, widthM / 6.5, heightM / 34 + range / 4);
-    cnv.bezierVertex(widthM / 4, heightM / 50 + range * 0.3, widthM / 4.85, heightM / 13 + range * 1.3, widthM / 4.8, heightM / 12 + range * 1.3); // primo picco disc
+    cnv.bezierVertex(widthM / 8.9, heightM / 30 + range / 3, widthM / 8.5, heightM / 32 + range / 4, widthM / 6, heightM / 30 + range / 4);
+    cnv.bezierVertex(widthM / 4.6, heightM / 26 + range * 0.3, widthM / 4.9, heightM / 13 + range * 1.3, widthM / 4.85, heightM / 10 + range * 1.3); // primo picco disc
     cnv.bezierVertex(widthM / 4.8, heightM / 4 + range * 1.3, widthM / 4, heightM / 4 + range * 1.3, widthM / 3.5, heightM / 4 + range * 1.3); //seconda valle disc
-    cnv.bezierVertex(widthM / 2.9, heightM / 4.2 + range * 1.3, widthM / 3.1, heightM / 5.5 + range * 0.5, widthM / 3, heightM / 8 + range * 0.5); //seconda valle sal bass
+    cnv.bezierVertex(widthM / 2.9, heightM / 4.2 + range * 1.3, widthM / 3, heightM / 5.2 + range * 0.5, widthM / 3, heightM / 7 + range * 0.5); //seconda valle sal bass
     cnv.bezierVertex(widthM / 2.9, heightM / 4 + range * 0.8, widthM / 2.4, heightM / 6 + range * 0.8, widthM / 2.4, heightM / 18 + range * 0.8); // seconda valle sal alt
     cnv.bezierVertex(widthM / 2.45, heightM / 20 + range / 3.5, widthM / 2.2, heightM / 24 + range / 3.5, widthM / 2.2, heightM / 22 + range / 3.5); //secondo picco sal
     cnv.bezierVertex(widthM / 2.2, heightM / 24.5 + range / 3.5, widthM / 2.0, heightM / 24 + range / 3.5, widthM / 2.0, heightM / 7 + range / 3.5); //secondo picco disc

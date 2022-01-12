@@ -290,9 +290,9 @@ body {
 .skillDetail {
   display: grid;
   place-items: center;
-  width: 13vh;
-  height: 13vh;
-  border: 6px solid rgb(15, 15, 15);
+  width: 12vh;
+  height: 12vh;
+  border: 5px solid rgb(15, 15, 15);
   border-radius: 100%;
   background-position: 100% 10%;
   background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("images/wave-Def-Mod-Two.webp");
@@ -586,7 +586,7 @@ body {
 
 #footerText {
   font-family: 'Libre Baskerville', serif;
-  font-size: 14px;
+  font-size: 4vw;
   color: white;
   padding-bottom: 5%;
 }
@@ -601,15 +601,15 @@ body {
   color: white;
   background: rgb(8, 21, 145);
   bottom: 10%;
-  width: 10vh;
-  height: 10vh;
-  border-left: 1vw solid rgb(15, 15, 15);
-  border-top: 1vw solid rgb(15, 15, 15);
+  width: 14vw;
+  height: 14vw;
+  border-left: 0.2vw solid rgb(15, 15, 15);
+  border-top: 0.2vw solid rgb(15, 15, 15);
   /* border-top: 1vw solid rgb(7, 123, 244); */
-  border-right: 1vw solid rgb(15, 15, 15);
+  border-right: 0.2vw solid rgb(15, 15, 15);
   border-bottom: 1vw solid rgb(15, 15, 15);
   border-radius: 100%;
-  box-shadow: inset 0vw -4vw rgb(7, 123, 244);
+  box-shadow: inset 0vh -2vh rgb(7, 123, 244);
   transition: 1s ease all;
 }
 
@@ -636,7 +636,7 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    background: rgb(236, 33, 219);
+    background: rgb(64, 33, 236);
     z-index: -1;
   }
 
@@ -864,7 +864,20 @@ body {
   #contacts>span {
     font-size: 5vw;
   }
+
+  #footerText {
+    font-size: 4vh;
+  }
+
+  #returnBtn {
+    font-size: 5vw;
+    width: 9vw;
+    height: 9vw;
+    background: rgb(64, 33, 236);
+  }
 }
+
+
 
 @media only screen and (min-width: 481px) and (max-width: 899px) and (min-height: 481px) {
   #titlePageOne {
@@ -962,6 +975,17 @@ body {
     font-size: 8vw;
     filter: drop-shadow(4px 4px 2px black);
 
+  }
+
+  #returnBtn {
+    font-size: 4vh;
+    bottom: 10%;
+    width: 11vw;
+    height: 11vw;
+    border-left: 0.1vw solid rgb(15, 15, 15);
+    border-top: 0.1vw solid rgb(15, 15, 15);
+    border-right: 0.1vw solid rgb(15, 15, 15);
+    border-bottom: 0.5vw solid rgb(15, 15, 15);
   }
 
   #footerText {
@@ -1108,9 +1132,22 @@ body {
     font-size: 5vw;
   }
 
+  #returnBtn {
+    font-size: 4vh;
+    bottom: 10%;
+    width: 10vw;
+    height: 10vw;
+    border-left: 0vw solid rgb(15, 15, 15);
+    border-top: 0vw solid rgb(15, 15, 15);
+    border-right: 0vw solid rgb(15, 15, 15);
+    border-bottom: 0.3vw solid rgb(15, 15, 15);
+  }
+
   #footerText {
     font-size: 18px;
   }
+
+
 
 
 }

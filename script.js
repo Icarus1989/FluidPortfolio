@@ -57,11 +57,9 @@ mainElement.addEventListener('scroll', () => {
   if (window.pageYOffset >= sections[4].getBoundingClientRect().y) {
     returnBtn.style.display = "block";
     returnBtn.style.position = 'absolute';
-    // returnBtn.style.right = mainElement.clientWidth - mainElement.clientWidth / 1.065 + "px";
+    // returnBtn.style.right = mainElement.clientWidth - mainElement.clientWidth / 1.3 + "px";
     returnBtn.style.right = mainElement.clientWidth / 12 + "px";
     returnBtn.style.bottom = "1%";
-    // returnBtn.style.width = "10vh";
-    // returnBtn.style.height = "10vh";
   } else if (window.pageYOffset < sections[4].getBoundingClientRect().y) {
     returnBtn.style.display = "none";
   }
