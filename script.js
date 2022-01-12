@@ -55,7 +55,7 @@ mainElement.addEventListener('scroll', () => {
   }
 
   if (window.pageYOffset >= sections[4].getBoundingClientRect().y) {
-    returnBtn.style.display = "block";
+    returnBtn.style.display = "grid";
     returnBtn.style.position = 'absolute';
     // returnBtn.style.right = mainElement.clientWidth - mainElement.clientWidth / 1.3 + "px";
     returnBtn.style.right = mainElement.clientWidth / 12 + "px";
@@ -95,8 +95,8 @@ ageLabel.textContent = myYears;
 
 returnBtn.addEventListener('click', () => {
   mainElement.scrollTo({
-    top: 0,
-    left: 0,
+    top: sections[0].getBoundingClientRect().y,
+    left: sections[0].getBoundingClientRect().x,
     behavior: "smooth"
   })
 });

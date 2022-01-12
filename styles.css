@@ -411,7 +411,7 @@ body {
 .details>p {
   font-size: 1.6vh;
   font-weight: 600;
-  color: rgb(250, 250, 250);
+  color: white;
   text-shadow: 1px 1px rgb(50, 50, 50);
   text-align: start;
   padding-left: 4%;
@@ -596,8 +596,10 @@ body {
 }
 
 #returnBtn {
-  font-family: 'Dancing Script', cursive;
   font-size: 8vw;
+  text-align: center;
+  place-items: center;
+  padding: 0;
   color: white;
   background: rgb(8, 21, 145);
   bottom: 10%;
