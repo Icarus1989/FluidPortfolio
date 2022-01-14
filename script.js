@@ -95,5 +95,5 @@ returnBtn.addEventListener('click', () => {
     top: sections[0].getBoundingClientRect().y,
     left: sections[0].getBoundingClientRect().x,
     behavior: "smooth"
-  })
+  });
 });

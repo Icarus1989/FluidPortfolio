@@ -149,7 +149,6 @@ let canvasTextFieldOne = function (cnv) {
   cnv.setup = function () {
     cnv.createCanvas(wOne, hOne);
     cnv.background(220, 0);
-    // cnv.fill(23, 11, 217);
     particleOne = new Particle(cnv, wOne, hOne, wOne / 2, 0.8, 1.8, 3, 102, 207);
     particleTwo = new Particle(cnv, wOne, hOne, wOne / 4, 1.2, 1.4, 3, 102, 207);
     particleThree = new Particle(cnv, wOne, hOne, wOne * (3 / 4), 0.8, 1.0, 3, 102, 207);
