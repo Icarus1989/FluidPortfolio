@@ -1000,10 +1000,13 @@ body {
   }
 
   #containerTwo {
-    width: 80vw;
-    min-width: 810px;
+    width: auto;
+    max-width: 900px;
+    /* width: 80vw; */
+    /* min-width: 850px; */
     /* controllare min-width */
-    max-width: 1000px;
+    /* max-width: 900px; */
+    /* max-width: 1000px; */
     height: 90%;
     display: grid;
     grid-template-columns: 0.8fr 0.8fr;
