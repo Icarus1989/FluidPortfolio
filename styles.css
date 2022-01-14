@@ -1038,17 +1038,17 @@ body {
     background: transparent;
     text-align: start;
     position: relative;
-    padding-top: 1vh;
+    padding-top: 0vh;
     padding-bottom: 5vh;
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
+    margin-top: 1vh;
+    margin-bottom: 0vh;
     display: grid;
     place-items: center;
   }
 
   .textField>p {
     color: white;
-    padding: 0vh 0.1vh 5vh 1vh;
+    padding: 0vh 0.1vh 7vh 1vh;
     margin-top: 0vh;
     margin-bottom: 0vh;
     z-index: 21;
@@ -1056,9 +1056,10 @@ body {
   }
 
   #textBoxOne {
-    height: 18vh;
+    height: 20vh;
     padding-left: 5vw;
     padding-right: 5vw;
+    /* place-items: start center; */
   }
 
   #textBoxTwo {
@@ -1069,7 +1070,8 @@ body {
   }
 
   #textBoxTwo>ul {
-    padding: 2.5vh 0vh 0vh 0vh;
+    padding: 1vh 0vh 0vh 0vh;
+    margin: 0vh 0vh 0.1vh 0vh;
   }
 
   #textBoxThree {
