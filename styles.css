@@ -1001,7 +1001,7 @@ body {
 
   #containerTwo {
     width: auto;
-    max-width: 900px;
+    max-width: 920px;
     /* width: 80vw; */
     /* min-width: 850px; */
     /* controllare min-width */
@@ -1070,7 +1070,7 @@ body {
   }
 
   #textBoxTwo>ul {
-    padding: 1vh 0vh 0vh 0vh;
+    padding: 1.5vh 0vh 0vh 1vh;
     margin: 0vh 0vh 0.1vh 0vh;
   }
 
