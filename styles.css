@@ -920,6 +920,8 @@ body {
     padding-bottom: 6vh;
     display: grid;
     place-items: center;
+    line-height: 3vh;
+
   }
 
   #textBoxOne {
