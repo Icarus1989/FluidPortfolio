@@ -1000,13 +1000,12 @@ body {
   }
 
   #containerTwo {
-    width: auto;
-    max-width: 920px;
+    width: 70%;
     /* width: 80vw; */
     /* min-width: 850px; */
     /* controllare min-width */
     /* max-width: 900px; */
-    /* max-width: 1000px; */
+    max-width: 1000px;
     height: 90%;
     display: grid;
     grid-template-columns: 0.8fr 0.8fr;
@@ -1039,8 +1038,8 @@ body {
     text-align: start;
     position: relative;
     padding-top: 0vh;
-    padding-bottom: 5vh;
-    margin-top: 1vh;
+    padding-bottom: 6vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
     display: grid;
     place-items: center;
@@ -1048,17 +1047,17 @@ body {
 
   .textField>p {
     color: white;
-    padding: 0vh 0.1vh 4vh 1vh;
+    padding: 2vh 0.1vh 10% 1vh;
     margin-top: 0vh;
     margin-bottom: 0vh;
     z-index: 21;
-    line-height: 1.6rem;
+    line-height: 3.5vh;
   }
 
   #textBoxOne {
     height: 20vh;
-    padding-left: 6vh;
-    padding-right: 6vh;
+    padding-left: 10%;
+    padding-right: 10%;
     /* place-items: start center; */
   }
 
@@ -1066,8 +1065,8 @@ body {
     height: 20vh;
     place-items: start;
     padding-top: 2vh;
-    padding-left: 6vh;
-    padding-right: 6vh;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   #textBoxTwo>ul {
@@ -1077,12 +1076,16 @@ body {
 
   #textBoxThree {
     height: 35vh;
-    padding-left: 6vh;
-    padding-right: 6vh;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   #titlePageThree {
     font-size: 5vw;
+  }
+
+  #skills {
+    width: 70%;
   }
 
   .skillDetail {
@@ -1107,7 +1110,7 @@ body {
 
   .details>p {
     font-size: 1.7vh;
-    line-height: 1.7rem;
+    line-height: 3.5vh;
   }
 
   .linksInt:hover {
