@@ -1000,7 +1000,7 @@ body {
   }
 
   #containerTwo {
-    width: 70%;
+    width: 65%;
     /* width: 80vw; */
     /* min-width: 850px; */
     /* controllare min-width */
@@ -1038,7 +1038,7 @@ body {
     text-align: start;
     position: relative;
     padding-top: 0vh;
-    padding-bottom: 6vh;
+    padding-bottom: 0vh;
     margin-top: 0vh;
     margin-bottom: 0vh;
     display: grid;
@@ -1055,29 +1055,31 @@ body {
   }
 
   #textBoxOne {
-    height: 20vh;
+    height: 25%;
     padding-left: 10%;
     padding-right: 10%;
-    /* place-items: start center; */
+    place-items: start;
   }
 
   #textBoxTwo {
-    height: 20vh;
+    height: 25%;
     place-items: start;
     padding-top: 2vh;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 11%;
+    padding-right: 11%;
   }
 
   #textBoxTwo>ul {
-    padding: 1.5vh 0vh 0vh 1vh;
-    margin: 0vh 0vh 0.1vh 0vh;
+    padding: 0vh 0vh 0vh 1vh;
+    margin: 0vh 0vh 0vh 0vh;
+    line-height: 3vh;
   }
 
   #textBoxThree {
     height: 35vh;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 11%;
+    padding-right: 11%;
+    place-items: start;
   }
 
   #titlePageThree {
