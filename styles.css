@@ -1003,10 +1003,6 @@ body {
 
   #containerTwo {
     width: 65%;
-    /* width: 80vw; */
-    /* min-width: 850px; */
-    /* controllare min-width */
-    /* max-width: 900px; */
     max-width: 1000px;
     height: 90%;
     display: grid;
