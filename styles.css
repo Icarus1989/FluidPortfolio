@@ -305,7 +305,7 @@ body {
   border: 0.7vh solid rgb(15, 15, 15);
   border-radius: 100%;
   background-position: 100% 10%;
-  background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("images/wave-Def-Mod-Two.webp");
+  background-image: linear-gradient(rgba(0, 0, 200, 0.2), rgba(0, 0, 200, 0.2)), url("images/wave.webp");
   background-color: rgb(50, 50, 50);
   background-size: 700% 180%;
   background-repeat: no-repeat;
@@ -525,7 +525,7 @@ body {
 #logo {
   width: 10vh;
   height: 13vh;
-  background-image: url("images/watch_dogs__legion_mask_golden_skull.webp");
+  background-image: url("images/GoldenSkull.webp");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
@@ -904,7 +904,7 @@ body {
     width: 90vw;
     height: 90%;
     display: grid;
-    grid-template-columns: minmax(35%, 0.9fr) 0.8fr;
+    grid-template-columns: 0.8fr 0.8fr;
     margin-top: 8vh;
   }
 
