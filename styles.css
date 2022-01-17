@@ -147,29 +147,35 @@ body {
   display: grid;
   place-items: center;
   width: fit-content;
-  width: 40vw;
+  /* width: 40vw; */
   height: auto;
   border: solid rgb(15, 15, 15);
-  border-width: 0.8vh 0vh 0.8vh 0vh;
+  border-width: 0.8vh 0vh 0.4vh 0vh;
   border-radius: 15px;
-  background: linear-gradient(to left, white 7%, rgb(2, 71, 199) 8%, rgb(2, 71, 199) 92%, white 93%);
+  background: linear-gradient(to left, white 7%, rgb(2, 71, 199) 8%, rgb(8, 21, 145) 92%, white 93%);
+  /* background: white; */
   z-index: 1;
   margin-left: 0%;
   margin-right: 0%;
 
   overflow: hidden;
   box-shadow: inset 0vh -0.5vh black;
+  padding-top: 20%;
+  padding-right: 2%;
+  padding-bottom: 20%;
+  padding-left: 2%;
 }
 
 #imgContainer>img {
-  max-width: 40vh;
-  width: 40vw;
+  /* max-width: 40vh; */
+  width: 36vw;
   height: auto;
   z-index: 2;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  margin-top: 10%;
-  margin-bottom: 0%;
+  border-top: 6px solid rgb(3, 61, 221);
+  border-right: 6px solid rgb(3, 61, 221);
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid rgb(3, 61, 221);
+  border-radius: 50%;
   opacity: 1.0;
 }
 
@@ -612,8 +618,8 @@ body {
 
 @media only screen and (min-width: 280px) and (max-width: 480px) and (orientation: portrait) {
   #titlePageTwo {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 12%;
   }
 
   #containerFour::-webkit-scrollbar {
@@ -638,11 +644,11 @@ body {
   }
 
   #titlePageOne {
-    font-size: 12vw;
+    font-size: 10vw;
   }
 
   #subtitleTest {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
 
@@ -666,7 +672,15 @@ body {
   }
 
   #imgContainer {
-    width: 25vw;
+    padding-top: 6%;
+    padding-right: 1%;
+    padding-bottom: 6%;
+    padding-left: 1%;
+  }
+
+  #imgContainer>img {
+    width: 40vh;
+
   }
 
   #textSection {
@@ -744,7 +758,9 @@ body {
     margin-bottom: 2vw;
   }
 
-
+  #skills {
+    width: 80%;
+  }
 
   .skillContainer {
     height: 35vh;
@@ -870,7 +886,6 @@ body {
     font-size: 5vw;
     width: 9vw;
     height: 9vw;
-    background: rgb(64, 33, 236);
   }
 }
 
@@ -1012,15 +1027,25 @@ body {
   #photoSection {
     display: grid;
     place-items: start center;
-    grid-template-rows: 0.3fr 0.8fr;
+    grid-template-rows: 0.3fr 0.7fr;
   }
 
   #imgContainer {
+    padding-top: 6%;
+    padding-right: 1%;
+    padding-bottom: 6%;
+    padding-left: 1%;
+    margin: 5%;
+  }
+
+  #imgContainer>img {
     width: 40vh;
+
   }
 
   #titleTwoContainer {
     height: auto;
+    margin-top: 3%;
   }
 
   #titlePageTwo {
@@ -1054,8 +1079,8 @@ body {
 
   #textBoxOne {
     height: 25%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
     place-items: start;
   }
 
@@ -1063,8 +1088,8 @@ body {
     height: 25%;
     place-items: start;
     padding-top: 2vh;
-    padding-left: 11%;
-    padding-right: 11%;
+    padding-left: 12%;
+    padding-right: 12%;
   }
 
   #textBoxTwo>ul {
