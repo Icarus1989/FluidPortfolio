@@ -110,13 +110,13 @@ body {
   font-family: 'Libre Baskerville';
   font-size: 2vh;
   position: relative;
-  bottom: 10%;
+  bottom: 20%;
   display: flex;
   flex-direction: row;
   place-items: center;
   filter: drop-shadow(3px 3px 1px rgb(15, 15, 15));
   opacity: 0.0;
-  animation: disappear 3s ease-in-out 2;
+  animation: disappear 3s ease-in-out 2.5 1s forwards;
 }
 
 #scrolldownIndicator>img {
@@ -139,6 +139,10 @@ body {
   100% {
     opacity: 0.0;
   }
+}
+
+#scrolldownIndicator::after {
+  opacity: 1.0;
 }
 
 #containerTwo {
