@@ -104,6 +104,43 @@ body {
   text-align: center;
 }
 
+#scrolldownIndicator {
+  width: fit-content;
+  color: white;
+  font-family: 'Libre Baskerville';
+  font-size: 2.3vh;
+  position: relative;
+  bottom: -50%;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  filter: drop-shadow(3px 3px 1px rgb(15, 15, 15));
+  opacity: 0.0;
+  animation: disappear 3s ease-in-out 2;
+}
+
+#scrolldownIndicator>img {
+  color: white;
+  width: 10vw;
+  height: 3vh;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 0.0;
+  }
+
+  50% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0.0;
+  }
+}
+
 #containerTwo {
   display: grid;
   grid-template-columns: 0.9fr 1fr;
@@ -651,7 +688,17 @@ body {
     font-size: 6vw;
   }
 
+  #scrolldownIndicator {
+    font-size: 3vh;
+    bottom: -45%;
+  }
 
+  #scrolldownIndicator>img {
+    width: 5vw;
+    height: 4vh;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
   #containerTwo {
     grid-template-columns: 0.9fr 0.9fr;
@@ -680,15 +727,9 @@ body {
 
   #imgContainer>img {
     width: 40vh;
-
   }
 
   #textSection {
-    /* display: grid;
-    grid-template-areas:
-      "a c"
-      "b c"
-      ". c"; */
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -889,8 +930,6 @@ body {
   }
 }
 
-
-
 @media only screen and (min-width: 481px) and (max-width: 899px) and (min-height: 481px) {
   #titlePageOne {
     font-size: 14vw;
@@ -904,7 +943,7 @@ body {
     width: 90vw;
     height: 90%;
     display: grid;
-    grid-template-columns: 0.8fr 0.8fr;
+    grid-template-columns: 0.9fr 0.9fr;
     margin-top: 8vh;
   }
 
@@ -920,7 +959,7 @@ body {
   }
 
   #titlePageTwo {
-    font-size: 9vh;
+    font-size: 8vh;
     padding-top: 2%;
     padding-bottom: 2%;
     margin: 0;
@@ -1016,6 +1055,18 @@ body {
     font-size: 8vh;
   }
 
+  #scrolldownIndicator {
+    font-size: 18px;
+    bottom: -45%;
+  }
+
+  #scrolldownIndicator>img {
+    width: 50px;
+    height: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   #containerTwo {
     width: 65%;
     max-width: 1000px;
@@ -1100,8 +1151,8 @@ body {
 
   #textBoxThree {
     height: 35vh;
-    padding-left: 11%;
-    padding-right: 11%;
+    padding-left: 12%;
+    padding-right: 12%;
     place-items: start;
   }
 
