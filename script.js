@@ -64,7 +64,7 @@ mainElement.addEventListener('scroll', () => {
   }
 });
 
-scrollDownInd.style.bottom = "25%";
+// scrollDownInd.style.bottom = "25%";
 
 buttonsContainer.children[0].style.color = "rgb(7, 123, 244)";
 
