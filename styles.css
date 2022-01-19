@@ -657,6 +657,10 @@ body {
     display: none;
   }
 
+  #scrolldownIndicator {
+    bottom: 25%;
+  }
+
   #containerFour {
     -ms-overflow-style: none;
     scrollbar-width: none;
