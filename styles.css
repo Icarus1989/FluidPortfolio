@@ -41,7 +41,7 @@ body {
   display: grid;
   grid-template-rows: 100% 100% 100% 100% 100%;
   overflow-y: scroll;
-  outline: 1px dashed lightgray;
+  /* outline: 1px dashed lightgray; */
   /* controllare outline se necessario */
   flex: none;
 }
@@ -110,7 +110,7 @@ body {
   font-family: 'Libre Baskerville';
   font-size: 2vh;
   position: relative;
-  bottom: -20%;
+  bottom: 0%;
   display: flex;
   flex-direction: row;
   place-items: center;
@@ -184,13 +184,11 @@ body {
   display: grid;
   place-items: center;
   width: fit-content;
-  /* width: 40vw; */
   height: auto;
   border: solid rgb(15, 15, 15);
   border-width: 0.8vh 0vh 0.4vh 0vh;
   border-radius: 15px;
   background: linear-gradient(to left, white 7%, rgb(2, 71, 199) 8%, rgb(8, 21, 145) 92%, white 93%);
-  /* background: white; */
   z-index: 1;
   margin-left: 0%;
   margin-right: 0%;
@@ -204,7 +202,6 @@ body {
 }
 
 #imgContainer>img {
-  /* max-width: 40vh; */
   width: 36vw;
   height: auto;
   z-index: 2;
@@ -364,7 +361,6 @@ body {
   }
 }
 
-
 .skillDetail>svg {
   height: 8vh;
   color: white;
@@ -418,8 +414,6 @@ body {
   scroll-snap-type: x mandatory;
   position: relative;
 }
-
-
 
 .works {
   width: 100vw;
@@ -480,7 +474,6 @@ body {
 .linksInt>i {
   color: rgb(74, 162, 255);
   vertical-align: center;
-
 }
 
 .linksInt>img {
@@ -596,12 +589,9 @@ body {
 #contacts>span>a>i {
   color: white;
   filter: drop-shadow(3px 3px 3px rgb(12, 61, 248)) drop-shadow(3px 1px 1px black);
-
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-
-
 
 #buttonsContainer {
   position: relative;
@@ -836,7 +826,6 @@ body {
   }
 
   .works {
-    /* grid-template-rows: auto 0.9fr 0.1fr; */
     grid-template-rows: 0.1fr auto 0.1fr;
     place-items: start center;
   }
@@ -872,8 +861,6 @@ body {
   }
 
   #linksDoubleContainer {
-    /* align-items: start;
-    justify-items: center; */
     margin-bottom: 3vh;
   }
 
@@ -881,7 +868,6 @@ body {
     font-size: 6vh;
     height: 5vh;
     place-items: start center;
-
   }
 
   #buttonsContainer {
@@ -903,13 +889,6 @@ body {
     width: 16vh;
     height: 18vh;
   }
-
-  /* #first {
-    margin-bottom: 
-  }
-  
-  #second {
-  } */
 
   #titlePageFive {
     font-size: 7vw;
@@ -975,7 +954,6 @@ body {
     display: grid;
     place-items: center;
     line-height: 3vh;
-
   }
 
   #textBoxOne {
@@ -1169,7 +1147,6 @@ body {
     height: 9.5vw;
   }
 
-
   .labels {
     font-size: 3vh;
     filter: drop-shadow(3px 3px 1px black);
@@ -1205,7 +1182,6 @@ body {
     font-size: 4vw;
     padding: 0vw 1vw 0vw 1vw;
     filter: drop-shadow(4px 4px 2px black);
-
   }
 
   #titlePageFive {
