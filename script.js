@@ -9,6 +9,8 @@ let labels = document.querySelectorAll('.labels');
 let opacity = 0.1;
 let returnBtn = document.querySelector('#returnBtn');
 
+let scrollDownInd = document.querySelector('#scrolldownIndicator');
+
 mainElement.addEventListener('scroll', () => {
   if (window.pageYOffset > sections[2].getBoundingClientRect().y) {
     let promise = new Promise(resolve => {
@@ -61,6 +63,8 @@ mainElement.addEventListener('scroll', () => {
     returnBtn.style.display = "none";
   }
 });
+
+scrollDownInd.style.bottom = "10%";
 
 buttonsContainer.children[0].style.color = "rgb(7, 123, 244)";
 
