@@ -9,8 +9,6 @@ let labels = document.querySelectorAll('.labels');
 let opacity = 0.1;
 let returnBtn = document.querySelector('#returnBtn');
 
-let scrollDownInd = document.querySelector('#scrolldownIndicator');
-
 mainElement.addEventListener('scroll', () => {
   if (window.pageYOffset > sections[2].getBoundingClientRect().y) {
     let promise = new Promise(resolve => {
@@ -22,7 +20,6 @@ mainElement.addEventListener('scroll', () => {
         }
       }, 500);
     }).then(() => {
-
       let limits = [80, 90, 70, 80, 60, 50];
 
       for (let i = 0; i < circles.length; i++) {
@@ -34,7 +31,6 @@ mainElement.addEventListener('scroll', () => {
         circles[5].style.backgroundPosition = "100% 25%";
         circles[i].style.animation = `moveliquid 3s ease-in-out 1`;
 
-        // migliorabile
         let increaseOpacity = setInterval(() => {
           percentages[i].textContent = `${Number(percentages[i].textContent.slice(0, percentages[i].textContent.length - 1)) + (3)}%`;
           if (Number(percentages[i].textContent.slice(0, percentages[i].textContent.length - 1)) > limits[i]) {
@@ -48,7 +44,6 @@ mainElement.addEventListener('scroll', () => {
             opacity = 1.0;
           }
         }, 100);
-        // migliorabile
       }
     });
   }
@@ -56,15 +51,12 @@ mainElement.addEventListener('scroll', () => {
   if (window.pageYOffset >= sections[4].getBoundingClientRect().y) {
     returnBtn.style.display = "grid";
     returnBtn.style.position = 'absolute';
-    // returnBtn.style.right = mainElement.clientWidth - mainElement.clientWidth / 1.3 + "px";
     returnBtn.style.right = mainElement.clientWidth / 12 + "px";
     returnBtn.style.bottom = "1%";
   } else if (window.pageYOffset < sections[4].getBoundingClientRect().y) {
     returnBtn.style.display = "none";
   }
 });
-
-// scrollDownInd.style.bottom = "25%";
 
 buttonsContainer.children[0].style.color = "rgb(7, 123, 244)";
 

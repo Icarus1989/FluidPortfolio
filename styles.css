@@ -41,8 +41,6 @@ body {
   display: grid;
   grid-template-rows: 100% 100% 100% 100% 100%;
   overflow-y: scroll;
-  /* outline: 1px dashed lightgray; */
-  /* controllare outline se necessario */
   flex: none;
 }
 
@@ -228,6 +226,7 @@ body {
   place-items: center;
   padding-left: 6vw;
   padding-right: 6vw;
+  /*  */
 }
 
 .textCanvas {
@@ -648,6 +647,11 @@ body {
 }
 
 @media only screen and (min-width: 280px) and (max-width: 480px) and (orientation: portrait) {
+
+  #scrolldownIndicator {
+    bottom: 25%;
+  }
+
   #titlePageTwo {
     padding-top: 8%;
     padding-bottom: 12%;
@@ -655,10 +659,6 @@ body {
 
   #containerFour::-webkit-scrollbar {
     display: none;
-  }
-
-  #scrolldownIndicator {
-    bottom: 25%;
   }
 
   #containerFour {
@@ -717,10 +717,7 @@ body {
   }
 
   #imgContainer {
-    padding-top: 6%;
-    padding-right: 1%;
-    padding-bottom: 6%;
-    padding-left: 1%;
+    padding: 6% 1% 6% 1%;
   }
 
   #imgContainer>img {
@@ -775,20 +772,12 @@ body {
   }
 
   #textBoxThree {
-    /* flex: 1 1 10vw; */
-
     height: 50vh;
     flex: 1 1 25vw;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding: 1rem 6vw 0rem 6vw;
     display: grid;
     place-items: start center;
     text-align-last: left;
-
   }
 
   #titlePageThree {
@@ -1068,10 +1057,7 @@ body {
   }
 
   #imgContainer {
-    padding-top: 6%;
-    padding-right: 1%;
-    padding-bottom: 6%;
-    padding-left: 1%;
+    padding: 6% 1% 6% 1%;
     margin: 5%;
   }
 
@@ -1124,9 +1110,7 @@ body {
   #textBoxTwo {
     height: 25%;
     place-items: start;
-    padding-top: 2vh;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding: 2vh 12% 0vh 12%;
   }
 
   #textBoxTwo>ul {

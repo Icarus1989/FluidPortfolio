@@ -1,7 +1,6 @@
 let bkgCanvasContainer = document.querySelector('#bkgCanvasContainer');
 let mainElt = document.querySelector('#main');
 let sections = document.querySelectorAll('section');
-
 // Background Animation -->
 let widthM = document.documentElement.clientWidth;
 let heightM = document.documentElement.clientHeight;
@@ -55,7 +54,6 @@ let mainCanvas = function (cnv) {
     cnv.endShape();
 
     range = offset + variationX;
-
     cnv.stroke(7, 123, 244);
     cnv.fill(8, 21, 145);
     cnv.beginShape();
@@ -87,9 +85,8 @@ new p5(mainCanvas, bkgCanvasContainer);
 
 mainElt.addEventListener('scroll', () => {
   offset = -(sections[0].getBoundingClientRect().y) / 10;
-}); // <-- Background Animation
-
-// Second page animation -->
+});
+// <-- Background Animation | Second page animation -->
 class Particle {
   constructor(p = p5.instance, w, h, xLoc, pxPerFrame, limit, red, green, blue) {
     this.p = p;
@@ -101,22 +98,18 @@ class Particle {
     this.vel = p.createVector(0, pxPerFrame);
     this.r = w / 3.3;
     this.limit = this.r / limit;
-
     this.red = red;
     this.green = green;
     this.blue = blue;
   }
   show() {
-
     this.p.fill(this.red, this.green, this.blue);
     this.p.noStroke();
     this.p.arc(this.pos.x, this.pos.y, this.r, this.r, 0, this.p.PI);
     return this;
   }
-  update() {
+  updateWithEdges() {
     this.pos.add(this.vel);
-  }
-  edges() {
     if (this.pos.y > this.h - (this.limit)) {
       this.vel.y = 0;
     }
@@ -166,7 +159,6 @@ let canvasTextFieldOne = function (cnv) {
     particleOne = new Particle(cnv, w, h, w / 2, 0.8, 1.8, 3, 102, 207);
     particleTwo = new Particle(cnv, w, h, w / 4, 1.2, 1.4, 3, 102, 207);
     particleThree = new Particle(cnv, w, h, w * (3 / 4), 0.8, 1.0, 3, 102, 207);
-
     cnv.fill(255);
     cnv.noStroke();
     cnv.rect(w / 24, 0, w - (2 * w / 24), h - (particleOne.limit / 0.9), particleOne.r / 4);
@@ -177,14 +169,10 @@ let canvasTextFieldOne = function (cnv) {
     particleOne.show();
     particleTwo.show();
     particleThree.show();
-
     if (window.pageYOffset > sections[1].getBoundingClientRect().y) {
-      particleOne.update();
-      particleOne.edges();
-      particleTwo.update();
-      particleTwo.edges();
-      particleThree.update();
-      particleThree.edges();
+      particleOne.updateWithEdges()
+      particleTwo.updateWithEdges()
+      particleThree.updateWithEdges()
     }
   }
 }
@@ -222,14 +210,10 @@ let canvasTextFieldTwo = function (cnv) {
     particleOne.show();
     particleTwo.show();
     particleThree.show();
-
     if (window.pageYOffset > sections[1].getBoundingClientRect().y) {
-      particleOne.update();
-      particleOne.edges();
-      particleTwo.update();
-      particleTwo.edges();
-      particleThree.update();
-      particleThree.edges();
+      particleOne.updateWithEdges()
+      particleTwo.updateWithEdges()
+      particleThree.updateWithEdges()
     }
   }
 }
@@ -268,14 +252,10 @@ let canvasTextFieldThree = function (cnv) {
     particleOne.show();
     particleTwo.show();
     particleThree.show();
-
     if (window.pageYOffset > sections[1].getBoundingClientRect().y) {
-      particleOne.update();
-      particleOne.edges();
-      particleTwo.update();
-      particleTwo.edges();
-      particleThree.update();
-      particleThree.edges();
+      particleOne.updateWithEdges()
+      particleTwo.updateWithEdges()
+      particleThree.updateWithEdges()
     }
   }
 }
