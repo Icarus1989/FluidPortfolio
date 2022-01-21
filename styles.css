@@ -920,7 +920,7 @@ body {
     height: 90%;
     display: grid;
     grid-template-columns: 0.9fr 0.9fr;
-    margin-top: 8vh;
+    margin-top: 5vh;
   }
 
   #photoSection {
