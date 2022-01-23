@@ -1100,7 +1100,7 @@ body {
   #textBoxTwo {
     height: 25%;
     place-items: start;
-    padding: 3% 12% 1% 12%;
+    padding: 3% 12% 2% 12%;
   }
 
   #textBoxTwo>ul {
