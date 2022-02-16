@@ -1,6 +1,7 @@
 let bkgCanvasContainer = document.querySelector('#bkgCanvasContainer');
 let mainElt = document.querySelector('#main');
 let sections = document.querySelectorAll('section');
+
 // Background Animation -->
 let widthM = document.documentElement.clientWidth;
 let heightM = document.documentElement.clientHeight;
@@ -86,7 +87,9 @@ new p5(mainCanvas, bkgCanvasContainer);
 mainElt.addEventListener('scroll', () => {
   offset = -(sections[0].getBoundingClientRect().y) / 10;
 });
+
 // <-- Background Animation | Second page animation -->
+
 class Particle {
   constructor(p = p5.instance, w, h, xLoc, pxPerFrame, limit, red, green, blue) {
     this.p = p;
